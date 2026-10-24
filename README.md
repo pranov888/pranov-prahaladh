@@ -133,19 +133,20 @@ const pranov = {
 
 <img width="70%" src="https://github-readme-streak-stats.herokuapp.com?user=pranov888&theme=github-dark-blue&background=000000&border=333333&stroke=444444&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=aaaaaa&currStreakLabel=aaaaaa&sideLabels=aaaaaa&dates=666666" alt="GitHub Streak"/>
 
-<br/><br/>
-
-<img width="70%" src="https://github-readme-activity-graph.vercel.app/graph?username=pranov888&bg_color=000000&color=ffffff&line=555555&point=ffffff&area_color=1a1a1a&area=true&hide_border=false&border_color=333333" alt="Activity Graph"/>
 
 </div>
 
 ---
 
-## `> achievements`
+## `> contributions --animate`
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=pranov888&theme=onestar&column=7&margin-w=8&margin-h=8&no-bg=true&no-frame=false&rank=SECRET,SSS,SS,S,AAA,AA,A,B)](https://github.com/ryo-ma/github-profile-trophy)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pranov888/pranov888/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pranov888/pranov888/output/github-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/pranov888/pranov888/output/github-snake-dark.svg" />
+</picture>
 
 </div>
 
