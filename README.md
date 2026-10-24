@@ -125,6 +125,16 @@ const pranov = {
 
 <div align="center">
 
+```diff
+- WARNING: Contribution graph may appear suspiciously empty.
++ That's not a bug. That's a feature. I work in private. 🕵️
+```
+
+> 😅 *"Sorry, you can't see my contributions — I work in private.*
+> *My green squares are classified. Think of it as stealth mode."* 🥷🔒
+
+<br/>
+
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=pranov888&show_icons=true&theme=github_dark&bg_color=000000&border_color=333333&title_color=ffffff&text_color=aaaaaa&icon_color=ffffff&hide_border=false&include_all_commits=true&rank_icon=github" alt="GitHub Stats"/>
 &nbsp;&nbsp;
 <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranov888&layout=compact&theme=github_dark&bg_color=000000&border_color=333333&title_color=ffffff&text_color=aaaaaa&hide_border=false&langs_count=10" alt="Top Languages"/>
