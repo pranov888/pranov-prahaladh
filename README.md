@@ -52,7 +52,7 @@ const pranov = {
 
 <div align="center">
 
-### 🎨 Design & Creative
+### Design & Creative
 
 ![Figma](https://img.shields.io/badge/Figma-%23000000.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-%23000000.svg?style=for-the-badge&logo=Adobe%20XD&logoColor=white)
@@ -68,7 +68,7 @@ const pranov = {
 ![Sketch](https://img.shields.io/badge/Sketch-%23000000.svg?style=for-the-badge&logo=sketch&logoColor=white)
 ![InVision](https://img.shields.io/badge/InVision-%23000000.svg?style=for-the-badge&logo=invision&logoColor=white)
 
-### 💻 Languages & Frontend
+### Languages & Frontend
 
 ![HTML5](https://img.shields.io/badge/HTML5-%23000000.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-%23000000.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -86,7 +86,7 @@ const pranov = {
 ![Flutter](https://img.shields.io/badge/Flutter-%23000000.svg?style=for-the-badge&logo=flutter&logoColor=white)
 ![Svelte](https://img.shields.io/badge/Svelte-%23000000.svg?style=for-the-badge&logo=svelte&logoColor=white)
 
-### 🛠️ Tools & Ecosystem
+### Tools & Ecosystem
 
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%23000000.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-%23000000.svg?style=for-the-badge&logo=sass&logoColor=white)
@@ -112,11 +112,11 @@ const pranov = {
 ## `> design --process`
 
 ```
-  📋 Research      ──▶   🧠 Ideate      ──▶   ✏️ Wireframe
-       │                                              │
-       └──────────────────────────────────────────────┘
-                                                      │
-  🚀 Ship          ◀──   🔬 Test        ◀──   🎨 Prototype
+  Research      -->   Ideate      -->   Wireframe
+      |                                     |
+      +-------------------------------------+
+                                            |
+  Ship          <--   Test        <--   Prototype
 ```
 
 ---
@@ -126,12 +126,12 @@ const pranov = {
 <div align="center">
 
 ```diff
-- WARNING: Contribution graph may appear suspiciously empty.
-+ That's not a bug. That's a feature. I work in private. 🕵️
+- Contribution graph may appear suspiciously empty.
++ Not a bug. I work in private.
 ```
 
-> 😅 *"Sorry, you can't see my contributions — I work in private.*
-> *My green squares are classified. Think of it as stealth mode."* 🥷🔒
+> *"Sorry, you can't see my contributions.*
+> *My commits are classified. Think of it as stealth mode."*
 
 <br/>
 
@@ -142,7 +142,6 @@ const pranov = {
 <br/><br/>
 
 <img width="70%" src="https://github-readme-streak-stats.herokuapp.com?user=pranov888&theme=github-dark-blue&background=000000&border=333333&stroke=444444&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=aaaaaa&currStreakLabel=aaaaaa&sideLabels=aaaaaa&dates=666666" alt="GitHub Streak"/>
-
 
 </div>
 
@@ -169,11 +168,11 @@ const pranov = {
 
 <br/>
 
-**Open to collaborations, freelance projects & creative conversations**
+**Open to collaborations, freelance projects and creative conversations**
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/🌐_pranovdesign.vercel.app-%23000000.svg?style=for-the-badge)](https://pranovdesign.vercel.app)
+[![Portfolio](https://img.shields.io/badge/pranovdesign.vercel.app-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=white)](https://pranovdesign.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%23000000.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pranov888)
 [![Email](https://img.shields.io/badge/pranov888@gmail.com-%23000000.svg?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pranov888@gmail.com)
 
