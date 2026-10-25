@@ -1,25 +1,25 @@
 <div align="center">
 
 <!-- ANIMATED HEADER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1a1a1a&height=220&section=header&text=Pranov%20Prahaladh&fontSize=55&fontColor=ffffff&fontAlignY=35&desc=UI%20%2F%20UX%20Designer%20%E2%80%A2%20Frontend%20Developer%20%E2%80%A2%20Digital%20Craftsman&descSize=18&descAlignY=58&animation=fadeIn" alt="header"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1a1a1a&height=220&section=header&text=Pranov%20Prahaladh&fontSize=55&fontColor=ffffff&fontAlignY=35&desc=I%20design%20it.%20I%20build%20it.%20I%20obsess%20over%20it.&descSize=18&descAlignY=58&animation=fadeIn" alt="header"/>
 
-<!-- TYPING ANIMATION — fixed height for 3 lines -->
+<!-- TYPING ANIMATION -->
 <a href="https://pranovdesign.vercel.app">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&repeat=true&width=650&height=35&lines=Turning+ideas+into+pixel-perfect+interfaces+%E2%9C%A8" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&repeat=true&width=650&height=35&lines=Until+it+feels+right%2C+it+isn%27t+done." alt="Typing SVG" />
 </a>
 <br/>
 <a href="https://pranovdesign.vercel.app">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&repeat=true&width=650&height=35&lines=Where+design+meets+engineering+%F0%9F%96%A4" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&repeat=true&width=650&height=35&lines=Obsess+over+the+rest." alt="Typing SVG" />
 </a>
 <br/>
 <a href="https://pranovdesign.vercel.app">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&repeat=true&width=650&height=35&lines=Building+experiences%2C+not+just+products+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&repeat=true&width=650&height=35&lines=I+care+about+this+more+than+I+should." alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
-<!-- SOCIAL LINKS — only real ones -->
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-%23000000.svg?style=for-the-badge&logoColor=white)](https://pranovdesign.vercel.app)
+<!-- SOCIAL LINKS -->
+[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=white)](https://pranovdesign.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%23000000.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pranov888)
 [![Gmail](https://img.shields.io/badge/Gmail-%23000000.svg?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pranov888@gmail.com)
 
@@ -37,12 +37,12 @@
 ```ts
 const pranov = {
   role      : "UI/UX Designer & Frontend Developer",
-  location  : "Chennai, India 🇮🇳",
+  location  : "Chennai, India",
   portfolio : "pranovdesign.vercel.app",
-  philosophy: "Design is not how it looks — it's how it works.",
-  currently : "Crafting pixel-perfect, user-centered interfaces",
+  philosophy: "Design is not how it looks. It's how it works.",
+  currently : "Building things I can't stop thinking about.",
   learning  : ["Motion Design", "Design Systems", "Micro-interactions"],
-  funFact   : "I debug with coffee ☕ and ship with purpose 🎯",
+  funFact   : "I debug at midnight and ship before sunrise.",
 };
 ```
 
