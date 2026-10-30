@@ -23,38 +23,20 @@
       /* Floating Rotating Plus Anchor */
       .plus-spin {
         animation: spinPlus 10s linear infinite;
-        transform-origin: 50px 730px;
+        transform-origin: 50px 735px;
       }
       @keyframes spinPlus {
         from { transform: rotate(0deg); }
         to { transform: rotate(360deg); }
       }
 
-      /* Pulsing Star on Pill Button */
-      .pill-star {
+      /* Twinkling Star */
+      .star-twinkle {
         animation: starBlink 2.5s ease-in-out infinite alternate;
-        transform-origin: 1120px 730px;
       }
       @keyframes starBlink {
-        0% { transform: scale(0.8) rotate(0deg); opacity: 0.6; }
-        100% { transform: scale(1.3) rotate(90deg); opacity: 1; }
-      }
-
-      /* Hover/Breathing Pill Glow */
-      .pill-border {
-        animation: pillGlow 3s ease-in-out infinite alternate;
-      }
-      @keyframes pillGlow {
-        0% { stroke: #722F37; stroke-width: 1.5; }
-        100% { stroke: #B7A89A; stroke-width: 2.2; }
-      }
-
-      /* Tag hover effect */
-      .skill-tag {
-        transition: transform 0.2s ease;
-      }
-      .skill-tag:hover {
-        transform: translateY(-1px);
+        0% { opacity: 0.6; }
+        100% { opacity: 1; }
       }
     </style>
   </defs>
@@ -523,22 +505,34 @@
     </g>
   </g>
 
-  <!-- ==================== FOOTER STRIP ==================== -->
-  <!-- Floating Rotating Plus Anchor on Left (Exact detail from reference image) -->
+  <!-- ==================== FOOTER STRIP (PURE METADATA MENTIONS, NO FAKE BUTTONS) ==================== -->
+  <!-- Floating Rotating Plus Anchor on Left -->
   <g class="plus-spin" transform="translate(50, 735)">
-    <circle cx="0" cy="0" r="18" fill="#FAF7F2" stroke="#722F37" stroke-width="1.8" />
-    <line x1="-7" y1="0" x2="7" y2="0" stroke="#722F37" stroke-width="2.2" />
-    <line x1="0" y1="-7" x2="0" y2="7" stroke="#722F37" stroke-width="2.2" />
+    <circle cx="0" cy="0" r="16" fill="#FAF7F2" stroke="#722F37" stroke-width="1.8" />
+    <line x1="-6" y1="0" x2="6" y2="0" stroke="#722F37" stroke-width="2" />
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#722F37" stroke-width="2" />
   </g>
 
-  <g transform="translate(90, 740)">
-    <text x="0" y="0" fill="#886D5B" class="mono" font-size="11" letter-spacing="1">DESIGNED WITH MATHEMATICAL PRECISION · CHENNAI, INDIA</text>
+  <!-- Location & Discipline Mention -->
+  <g transform="translate(85, 740)">
+    <text x="0" y="0" fill="#886D5B" class="mono" font-size="11" letter-spacing="1">LOCATION: CHENNAI, INDIA · TIMEZONE: IST [UTC+5:30]</text>
   </g>
 
-  <!-- Interactive Pill Button on Right -->
-  <g transform="translate(1010, 735)" text-anchor="middle">
-    <rect x="-120" y="-22" width="240" height="44" rx="22" fill="#FAF7F2" class="pill-border" />
-    <text x="-8" y="5" fill="#722F37" class="mono" font-size="12" font-weight="700">LET'S CONNECT</text>
-    <text x="82" y="5" fill="#722F37" class="mono pill-star" font-size="16">✦</text>
+  <!-- Clean Informational Mentions on Right (No fake links) -->
+  <g transform="translate(680, 722)">
+    <!-- Vercel Portfolio Tag -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="28" rx="6" fill="#FAF7F2" stroke="#D6C4AE" stroke-width="1" />
+      <text x="10" y="18" fill="#722F37" class="mono" font-size="10" font-weight="700">VERCEL:</text>
+      <text x="65" y="18" fill="#241117" class="mono" font-size="10">pranovdesign.vercel.app</text>
+    </g>
+
+    <!-- Email Mention Tag -->
+    <g transform="translate(225, 0)">
+      <rect width="240" height="28" rx="6" fill="#FAF7F2" stroke="#D6C4AE" stroke-width="1" />
+      <text x="10" y="18" fill="#722F37" class="mono" font-size="10" font-weight="700">MAIL:</text>
+      <text x="50" y="18" fill="#241117" class="mono" font-size="10">pranov888@gmail.com</text>
+      <text x="218" y="19" fill="#722F37" class="mono star-twinkle" font-size="12">✦</text>
+    </g>
   </g>
 </svg>
