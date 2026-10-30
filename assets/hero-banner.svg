@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="auto">
   <defs>
     <!-- Background Gradient: Warm Light Mocha Cream -->
     <linearGradient id="bg-light-mocha" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F7F2E8" />
+      <stop offset="0%" stop-color="#F8F3EA" />
       <stop offset="50%" stop-color="#EEDDC7" />
       <stop offset="100%" stop-color="#F5EFE6" />
     </linearGradient>
@@ -15,7 +15,7 @@
 
     <!-- Ambient Burgundy Glow -->
     <radialGradient id="burgundy-ambient" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#722F37" stop-opacity="0.12" />
+      <stop offset="0%" stop-color="#722F37" stop-opacity="0.15" />
       <stop offset="100%" stop-color="#722F37" stop-opacity="0" />
     </radialGradient>
 
@@ -26,11 +26,23 @@
     </pattern>
 
     <style><![CDATA[
-      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,500;1,6..72,700&amp;family=Space+Grotesk:wght@500;700&amp;family=Space+Mono:wght@400;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
 
-      .mono { font-family: 'Space Mono', monospace; }
-      .grotesk { font-family: 'Space Grotesk', -apple-system, sans-serif; }
-      .serif-display { font-family: 'Newsreader', 'Cinzel', Georgia, serif; font-style: italic; }
+      .mono { font-family: 'Space Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace; }
+      .grotesk { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .hero-name {
+        font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: -2.5px;
+      }
+      .hero-role {
+        font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
+      }
+      .hero-desc {
+        font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.5;
+      }
 
       /* Pulsing Status Beacon */
       .beacon-pulse {
@@ -44,11 +56,11 @@
       /* Animated Turntable Discs */
       .turntable-spin-left {
         animation: spinDisc 8s linear infinite;
-        transform-origin: 34px 33px;
+        transform-origin: 41px 41px;
       }
       .turntable-spin-right {
         animation: spinDiscRev 10s linear infinite;
-        transform-origin: 186px 33px;
+        transform-origin: 229px 41px;
       }
       @keyframes spinDisc {
         from { transform: rotate(0deg); }
@@ -66,11 +78,11 @@
       .eq4 { animation: eqAnim4 0.9s infinite ease-in-out alternate; }
       .eq5 { animation: eqAnim5 1.2s infinite ease-in-out alternate; }
 
-      @keyframes eq1 { 0% { height: 4px; y: 16px; } 100% { height: 16px; y: 4px; } }
-      @keyframes eq2 { 0% { height: 16px; y: 4px; } 100% { height: 6px; y: 14px; } }
-      @keyframes eq3 { 0% { height: 7px; y: 13px; } 100% { height: 18px; y: 2px; } }
-      @keyframes eq4 { 0% { height: 15px; y: 5px; } 100% { height: 5px; y: 15px; } }
-      @keyframes eq5 { 0% { height: 5px; y: 15px; } 100% { height: 15px; y: 5px; } }
+      @keyframes eqAnim1 { 0% { height: 4px; y: 18px; } 100% { height: 18px; y: 4px; } }
+      @keyframes eqAnim2 { 0% { height: 18px; y: 4px; } 100% { height: 6px; y: 16px; } }
+      @keyframes eqAnim3 { 0% { height: 8px; y: 14px; } 100% { height: 20px; y: 2px; } }
+      @keyframes eqAnim4 { 0% { height: 16px; y: 6px; } 100% { height: 5px; y: 17px; } }
+      @keyframes eqAnim5 { 0% { height: 5px; y: 17px; } 100% { height: 17px; y: 5px; } }
 
       /* Twinkling Celestial Sparkles */
       .twinkle-1 {
@@ -79,11 +91,11 @@
       }
       .twinkle-2 {
         animation: starTwinkle 4s infinite ease-in-out 1.2s;
-        transform-origin: 1080px 80px;
+        transform-origin: 1090px 90px;
       }
       .twinkle-3 {
         animation: starTwinkle 3.6s infinite ease-in-out 2s;
-        transform-origin: 800px 220px;
+        transform-origin: 820px 240px;
       }
       @keyframes starTwinkle {
         0%, 100% { transform: scale(0.8) rotate(0deg); opacity: 0.5; }
@@ -93,35 +105,35 @@
   </defs>
 
   <!-- Container Base with Light Mocha Cream Background -->
-  <rect width="1200" height="400" fill="url(#bg-light-mocha)" rx="16" />
-  <rect width="1200" height="400" fill="url(#celestial-grid-light)" rx="16" />
+  <rect width="1200" height="420" fill="url(#bg-light-mocha)" rx="16" />
+  <rect width="1200" height="420" fill="url(#celestial-grid-light)" rx="16" />
 
   <!-- Outer Hairline Frame in Cosmic Latte -->
-  <rect x="1" y="1" width="1198" height="398" fill="none" stroke="#D1C0AA" stroke-width="1.5" rx="15" />
+  <rect x="1" y="1" width="1198" height="418" fill="none" stroke="#D1C0AA" stroke-width="1.5" rx="15" />
 
-  <!-- Ambient Burgundy Glow -->
-  <circle cx="960" cy="180" r="180" fill="url(#burgundy-ambient)" />
+  <!-- Ambient Burgundy Glow on Right -->
+  <circle cx="975" cy="170" r="190" fill="url(#burgundy-ambient)" />
 
   <!-- Twinkling Celestial Stars (✦) -->
   <g fill="#722F37" class="twinkle-1">
     <text x="940" y="140" font-size="22" text-anchor="middle">✦</text>
   </g>
   <g fill="#B7A89A" class="twinkle-2">
-    <text x="1080" y="80" font-size="16" text-anchor="middle">✦</text>
+    <text x="1090" y="90" font-size="16" text-anchor="middle">✦</text>
   </g>
   <g fill="#722F37" class="twinkle-3">
-    <text x="800" y="220" font-size="20" text-anchor="middle">✦</text>
+    <text x="820" y="240" font-size="20" text-anchor="middle">✦</text>
   </g>
 
   <!-- Technical Corner Crosshairs -->
   <g stroke="#B7A89A" stroke-width="1.2">
     <path d="M 30 25 L 45 25 M 37.5 17.5 L 37.5 32.5" />
     <path d="M 1155 25 L 1170 25 M 1162.5 17.5 L 1162.5 32.5" />
-    <path d="M 30 375 L 45 375 M 37.5 367.5 L 37.5 382.5" />
-    <path d="M 1155 375 L 1170 375 M 1162.5 367.5 L 1162.5 382.5" />
+    <path d="M 30 395 L 45 395 M 37.5 387.5 L 37.5 402.5" />
+    <path d="M 1155 395 L 1170 395 M 1162.5 387.5 L 1162.5 402.5" />
   </g>
 
-  <!-- Header Micro-Navigation Strip (Pranov's Real Identity) -->
+  <!-- Header Micro-Navigation Strip -->
   <g transform="translate(60, 48)">
     <circle cx="6" cy="6" r="4.5" fill="#722F37" />
     <circle cx="6" cy="6" r="8" fill="none" stroke="#722F37" stroke-width="1" class="beacon-pulse" />
@@ -132,69 +144,67 @@
 
   <line x1="60" y1="72" x2="1140" y2="72" stroke="#D1C0AA" stroke-width="1" />
 
-  <!-- Main Hero Typography (Pranov's Real Content from Main) -->
-  <g transform="translate(60, 160)">
-    <!-- Line 1: Identity & Discipline -->
-    <text x="0" y="0" fill="#886D5B" class="mono" font-size="12" letter-spacing="2.5" font-weight="700">
-      PRANOV PRAHALADH — UI/UX DESIGNER &amp; FRONTEND DEVELOPER
+  <!-- Main Hero Area: Big Bold Name + Role + Explanation -->
+  <g transform="translate(60, 115)">
+    <!-- Top Index Track -->
+    <text x="0" y="15" fill="#886D5B" class="mono" font-size="11.5" letter-spacing="2" font-weight="700">IDENTITY // CREATIVE DEVELOPER &amp; DESIGNER</text>
+
+    <!-- BIG BOLD NAME: PRANOV PRAHALADH -->
+    <text x="0" y="80" fill="#241117" class="hero-name" font-size="68">PRANOV PRAHALADH</text>
+
+    <!-- Role Subheading in Deep Burgundy -->
+    <text x="0" y="126" fill="#722F37" class="hero-role" font-size="21" letter-spacing="1">UI/UX DESIGNER &amp; FRONTEND DEVELOPER</text>
+
+    <!-- Crisp Meaningful Explanation -->
+    <text x="0" y="166" fill="#3D2028" class="hero-desc" font-size="15" font-weight="600">
+      "Until it feels right, it isn't done." · Obsessed with high-fidelity design systems,
     </text>
-
-    <!-- Line 2: Giant Editorial Headline with Pranov's core mantra -->
-    <text x="0" y="65" fill="#241117" class="grotesk" font-size="56" font-weight="700" letter-spacing="-1.5">
-      Until it feels right,
-    </text>
-
-    <!-- Tactile Audio Hardware Pod (Pranov's Focus: Motion Design & Micro-interactions) -->
-    <g transform="translate(540, 10)">
-      <!-- Pod Outer Shell -->
-      <rect x="0" y="0" width="220" height="66" rx="33" fill="url(#pod-light-grad)" stroke="#C7B49D" stroke-width="1.5" />
-      <rect x="3" y="3" width="214" height="60" rx="30" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
-
-      <!-- Left Speaker / Rotating Turntable Disc -->
-      <g class="turntable-spin-left">
-        <circle cx="34" cy="33" r="22" fill="#2A141D" stroke="#542B39" stroke-width="1" />
-        <circle cx="34" cy="33" r="14" fill="#3D1D28" stroke="#722F37" stroke-width="0.8" />
-        <circle cx="34" cy="33" r="5" fill="#E8DCC6" />
-        <line x1="34" y1="11" x2="34" y2="17" stroke="#FAF6EE" stroke-width="1.5" />
-      </g>
-
-      <!-- Center OLED Mini Screen -->
-      <rect x="66" y="18" width="88" height="30" rx="4" fill="#2A141D" stroke="#4D2735" stroke-width="0.8" />
-      <text x="73" y="29" fill="#E8DCC6" class="mono" font-size="7" letter-spacing="0.5" font-weight="700">CURRENTLY // FOCUS</text>
-      <text x="73" y="41" fill="#FAF6EE" class="mono" font-size="7.5" font-weight="700">MOTION DESIGN</text>
-
-      <!-- Right Speaker with Equalizer -->
-      <g class="turntable-spin-right">
-        <circle cx="186" cy="33" r="22" fill="#2A141D" stroke="#542B39" stroke-width="1" />
-        <line x1="186" y1="11" x2="186" y2="17" stroke="#FAF6EE" stroke-width="1.5" />
-      </g>
-      <!-- Animated Equalizer Inside Right Speaker -->
-      <g transform="translate(176, 23)" fill="#722F37">
-        <rect x="0" y="10" width="2.5" height="10" rx="1" class="eq1" />
-        <rect x="5" y="6" width="2.5" height="14" rx="1" class="eq2" />
-        <rect x="10" y="4" width="2.5" height="16" rx="1" class="eq3" />
-        <rect x="15" y="8" width="2.5" height="12" rx="1" class="eq4" />
-        <rect x="20" y="11" width="2.5" height="9" rx="1" class="eq5" />
-      </g>
-    </g>
-
-    <!-- Line 2 Continuation: it isn't done. in Deep Burgundy Italics -->
-    <text x="785" y="65" fill="#722F37" class="serif-display" font-size="64" font-weight="700" letter-spacing="-0.5">
-      it isn't done.
-    </text>
-
-    <!-- Manifesto from Pranov's whoami -->
-    <text x="0" y="125" fill="#6B4F40" class="grotesk" font-size="18" font-weight="500">
-      "Design is not how it looks. It's how it works." — Obsess over the rest.
+    <text x="0" y="190" fill="#785A48" class="hero-desc" font-size="15" font-weight="500">
+      60fps kinetic motion physics, and crafting fluid digital experiences that delight.
     </text>
   </g>
 
-  <!-- Bottom Technical Coordinate Strip -->
-  <line x1="60" y1="335" x2="1140" y2="335" stroke="#D1C0AA" stroke-width="1" />
+  <!-- Tactile Audio Hardware Pod (Right Side Widget) -->
+  <g transform="translate(850, 140)">
+    <!-- Pod Outer Shell -->
+    <rect x="0" y="0" width="270" height="82" rx="41" fill="url(#pod-light-grad)" stroke="#C7B49D" stroke-width="1.5" />
+    <rect x="3" y="3" width="264" height="76" rx="38" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
 
-  <g transform="translate(60, 362)">
+    <!-- Left Rotating Turntable Disc -->
+    <g class="turntable-spin-left">
+      <circle cx="41" cy="41" r="28" fill="#2A141D" stroke="#542B39" stroke-width="1" />
+      <circle cx="41" cy="41" r="18" fill="#3D1D28" stroke="#722F37" stroke-width="0.8" />
+      <circle cx="41" cy="41" r="6" fill="#E8DCC6" />
+      <line x1="41" y1="13" x2="41" y2="21" stroke="#FAF6EE" stroke-width="1.5" />
+    </g>
+
+    <!-- Center OLED Mini Screen -->
+    <rect x="82" y="22" width="106" height="38" rx="5" fill="#2A141D" stroke="#4D2735" stroke-width="0.8" />
+    <text x="92" y="36" fill="#E8DCC6" class="mono" font-size="8" letter-spacing="0.5" font-weight="700">CURRENTLY // FOCUS</text>
+    <text x="92" y="51" fill="#FAF6EE" class="mono" font-size="9" font-weight="700">MOTION &amp; SYSTEMS</text>
+
+    <!-- Right Rotating Turntable Disc -->
+    <g class="turntable-spin-right">
+      <circle cx="229" cy="41" r="28" fill="#2A141D" stroke="#542B39" stroke-width="1" />
+      <line x1="229" y1="13" x2="229" y2="21" stroke="#FAF6EE" stroke-width="1.5" />
+    </g>
+
+    <!-- Animated Equalizer Inside Right Speaker -->
+    <g transform="translate(216, 28)" fill="#722F37">
+      <rect x="0" y="12" width="3" height="12" rx="1" class="eq1" />
+      <rect x="6" y="8" width="3" height="16" rx="1" class="eq2" />
+      <rect x="12" y="4" width="3" height="20" rx="1" class="eq3" />
+      <rect x="18" y="10" width="3" height="14" rx="1" class="eq4" />
+      <rect x="24" y="14" width="3" height="10" rx="1" class="eq5" />
+    </g>
+  </g>
+
+  <!-- Bottom Technical Coordinate Strip -->
+  <line x1="60" y1="355" x2="1140" y2="355" stroke="#D1C0AA" stroke-width="1" />
+
+  <g transform="translate(60, 385)">
     <text x="0" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">LEARNING: [MOTION DESIGN · DESIGN SYSTEMS · MICRO-INTERACTIONS]</text>
-    <text x="780" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">ROLE: CRAFTING FLUID WEB EXPERIENCES</text>
+    <text x="750" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">ROLE: CRAFTING FLUID WEB EXPERIENCES</text>
     <text x="1080" y="0" fill="#722F37" class="mono" font-size="10" font-weight="700" letter-spacing="1">SCROLL ↓</text>
   </g>
 </svg>

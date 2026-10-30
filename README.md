@@ -1,27 +1,27 @@
 <div align="center">
 
 <!-- ==================== HERO MASTHEAD ==================== -->
-<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/hero-banner.svg?v=5" alt="Designer who Builds - Pranov Prahaladh" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/hero-banner.svg?v=6" alt="Designer who Builds - Pranov Prahaladh" width="100%" />
 
 <br/><br/>
 
 <!-- ==================== IMPACT METRICS STRIP ==================== -->
-<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/metrics-strip.svg?v=5" alt="Impact Metrics &amp; Experience" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/metrics-strip.svg?v=6" alt="Impact Metrics &amp; Experience" width="100%" />
 
 <br/><br/>
 
 <!-- ==================== CORE PILLARS BENTO ==================== -->
-<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/bento-pillars.svg?v=5" alt="001-004 Core Design &amp; Engineering Pillars" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/bento-pillars.svg?v=6" alt="001-004 Core Design &amp; Engineering Pillars" width="100%" />
 
 <br/><br/>
 
 <!-- ==================== PROJECT CHARTER ==================== -->
-<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/project-charter.svg?v=5" alt="Project Charter &amp; Technical Execution" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/project-charter.svg?v=6" alt="Project Charter &amp; Technical Execution" width="100%" />
 
 <br/><br/>
 
 <!-- ==================== STACK MATRIX ==================== -->
-<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/stack-matrix.svg?v=5" alt="Core Technologies &amp; Collaboration" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/stack-matrix.svg?v=6" alt="Core Technologies &amp; Collaboration" width="100%" />
 
 <br/><br/>
 
