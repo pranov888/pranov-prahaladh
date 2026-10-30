@@ -88,10 +88,10 @@
       }
     ]]></style>
 
-    <clipPath id="clip-metric-1"><rect x="-10" y="15" width="240" height="92" /></clipPath>
-    <clipPath id="clip-metric-2"><rect x="-10" y="15" width="240" height="92" /></clipPath>
-    <clipPath id="clip-metric-3"><rect x="-10" y="15" width="260" height="92" /></clipPath>
-    <clipPath id="clip-metric-4"><rect x="-10" y="15" width="240" height="92" /></clipPath>
+    <clipPath id="clip-metric-1"><rect x="-10" y="32" width="240" height="74" /></clipPath>
+    <clipPath id="clip-metric-2"><rect x="-10" y="32" width="240" height="74" /></clipPath>
+    <clipPath id="clip-metric-3"><rect x="-10" y="32" width="260" height="74" /></clipPath>
+    <clipPath id="clip-metric-4"><rect x="-10" y="32" width="240" height="74" /></clipPath>
   </defs>
 
   <!-- Container Base with Light Mocha Cream -->
