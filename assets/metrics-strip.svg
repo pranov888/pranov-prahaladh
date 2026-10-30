@@ -119,10 +119,10 @@
     <!-- Ultra Bold Large Number -->
     <g clip-path="url(#clip-metric-1)">
       <g class="roll-num-1">
-        <text x="0" y="-142" fill="#241117" class="heavy-num" font-size="88">01<tspan fill="#722F37">+</tspan></text>
-        <text x="0" y="-62" fill="#241117" class="heavy-num" font-size="88">02<tspan fill="#722F37">+</tspan></text>
-        <text x="0" y="18" fill="#241117" class="heavy-num" font-size="88">03<tspan fill="#722F37">+</tspan></text>
-        <text x="0" y="98" fill="#241117" class="heavy-num" font-size="88">04<tspan fill="#722F37">+</tspan></text>
+        <text x="0" y="-142" fill="#241117" class="heavy-num" font-size="82">0.5<tspan fill="#722F37">+</tspan></text>
+        <text x="0" y="-62" fill="#241117" class="heavy-num" font-size="82">0.8<tspan fill="#722F37">+</tspan></text>
+        <text x="0" y="18" fill="#241117" class="heavy-num" font-size="82">1.0<tspan fill="#722F37">+</tspan></text>
+        <text x="0" y="98" fill="#241117" class="heavy-num" font-size="82">1.5<tspan fill="#722F37">+</tspan></text>
       </g>
     </g>
     
@@ -209,10 +209,10 @@
     <!-- Ultra Bold Large Number (Short & punchy, no clipping) -->
     <g clip-path="url(#clip-metric-4)">
       <g class="roll-num-4">
-        <text x="0" y="-142" fill="#FAF6EE" class="heavy-num" font-size="88">1k<tspan font-size="56" fill="#FAF6EE">+</tspan></text>
-        <text x="0" y="-62" fill="#FAF6EE" class="heavy-num" font-size="88">2k<tspan font-size="56" fill="#FAF6EE">+</tspan></text>
-        <text x="0" y="18" fill="#FAF6EE" class="heavy-num" font-size="88">4k<tspan font-size="56" fill="#FAF6EE">+</tspan></text>
-        <text x="0" y="98" fill="#FAF6EE" class="heavy-num" font-size="88">6k<tspan font-size="56" fill="#FAF6EE">+</tspan></text>
+        <text x="0" y="-142" fill="#FAF6EE" class="heavy-num" font-size="80">1.2k<tspan font-size="52" fill="#FAF6EE">+</tspan></text>
+        <text x="0" y="-62" fill="#FAF6EE" class="heavy-num" font-size="80">2.4k<tspan font-size="52" fill="#FAF6EE">+</tspan></text>
+        <text x="0" y="18" fill="#FAF6EE" class="heavy-num" font-size="80">3.8k<tspan font-size="52" fill="#FAF6EE">+</tspan></text>
+        <text x="0" y="98" fill="#FAF6EE" class="heavy-num" font-size="80">5.6k<tspan font-size="52" fill="#FAF6EE">+</tspan></text>
       </g>
     </g>
     
