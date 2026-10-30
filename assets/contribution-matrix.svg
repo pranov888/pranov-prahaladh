@@ -48,22 +48,6 @@
         animation: probeFlight 14s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
       }
 
-      /* Radar Sonar Ping from the Probe */
-      @keyframes sonarPing1 {
-        0%   { r: 4px; opacity: 0.9; stroke-width: 2px; }
-        100% { r: 30px; opacity: 0; stroke-width: 0.5px; }
-      }
-      @keyframes sonarPing2 {
-        0%   { r: 4px; opacity: 0.9; stroke-width: 2px; }
-        100% { r: 20px; opacity: 0; stroke-width: 0.5px; }
-      }
-      .sonar-ring-1 {
-        animation: sonarPing1 2.2s ease-out infinite;
-      }
-      .sonar-ring-2 {
-        animation: sonarPing2 2.2s ease-out 0.8s infinite;
-      }
-
       /* Equalizer Bar Harmonic Bounce */
       @keyframes eqPulse {
         0%, 100% { transform: scaleY(0.6); opacity: 0.5; }
@@ -159,10 +143,6 @@
 
     <!-- ==================== ANIMATION 2: THE AUTONOMOUS QUANTUM PROBE ==================== -->
     <g class="quantum-probe">
-      <!-- Expanding Sonar Waves -->
-      <circle cx="0" cy="0" r="8" fill="none" stroke="#722F37" class="sonar-ring-1" />
-      <circle cx="0" cy="0" r="8" fill="none" stroke="#A0505A" class="sonar-ring-2" />
-      
       <!-- Crosshair Target Reticle -->
       <!-- Top-left bracket -->
       <path d="M -12 -6 L -12 -12 L -6 -12" fill="none" stroke="#722F37" stroke-width="1.8" />

@@ -41,26 +41,6 @@
         line-height: 1.45;
       }
 
-      /* Animated Pulsing Rings in Burgundy Card */
-      .pulse-ring-1 {
-        animation: ringPulse1 3.5s infinite ease-out;
-        transform-origin: 955px 225px;
-      }
-      .pulse-ring-2 {
-        animation: ringPulse2 3.5s infinite ease-out 1.2s;
-        transform-origin: 955px 225px;
-      }
-      @keyframes ringPulse1 {
-        0% { transform: scale(0.6); opacity: 0.9; }
-        60% { transform: scale(1.35); opacity: 0.2; }
-        100% { transform: scale(1.55); opacity: 0; }
-      }
-      @keyframes ringPulse2 {
-        0% { transform: scale(0.6); opacity: 0.9; }
-        60% { transform: scale(1.35); opacity: 0.2; }
-        100% { transform: scale(1.55); opacity: 0; }
-      }
-
       /* Subtle Floating Star */
       .star-float {
         animation: starLevitate 3s infinite ease-in-out alternate;
@@ -154,11 +134,6 @@
   <!-- Card Background with Rounded Corners -->
   <rect x="914" y="14" width="272" height="252" rx="10" fill="url(#burgundy-card-grad)" />
   <rect x="915" y="15" width="270" height="250" rx="9" fill="none" stroke="rgba(250, 246, 238, 0.2)" stroke-width="1" />
-
-  <!-- Animated Celestial Concentric Rings -->
-  <circle cx="955" cy="225" r="26" fill="none" stroke="#FAF6EE" stroke-width="1.5" class="pulse-ring-1" />
-  <circle cx="955" cy="225" r="16" fill="none" stroke="#FAF6EE" stroke-width="1.2" class="pulse-ring-2" />
-  <circle cx="955" cy="225" r="5" fill="#FAF6EE" />
 
   <!-- Floating Star -->
   <g class="star-float">

@@ -29,23 +29,6 @@
         to { stroke-dashoffset: -28; }
       }
 
-      /* Animated Destination Beacon */
-      .beacon-ring-1 {
-        animation: beaconRing1 2.8s infinite ease-out;
-        transform-origin: 1040px 260px;
-      }
-      .beacon-ring-2 {
-        animation: beaconRing2 2.8s infinite ease-out 1s;
-        transform-origin: 1040px 260px;
-      }
-      @keyframes beaconRing1 {
-        0% { transform: scale(0.6); opacity: 1; }
-        100% { transform: scale(1.6); opacity: 0; }
-      }
-      @keyframes beaconRing2 {
-        0% { transform: scale(0.6); opacity: 1; }
-        100% { transform: scale(1.6); opacity: 0; }
-      }
     ]]></style>
   </defs>
 
@@ -56,9 +39,7 @@
   <!-- Animated Technical Pointer Curve in Deep Burgundy -->
   <path d="M 740 180 Q 890 120 1040 260" fill="none" stroke="#722F37" stroke-width="2.2" class="curve-flow" />
   
-  <!-- Beacon Rings at Destination -->
-  <circle cx="1040" cy="260" r="18" fill="none" stroke="#722F37" stroke-width="1.6" class="beacon-ring-1" />
-  <circle cx="1040" cy="260" r="12" fill="none" stroke="#B7A89A" stroke-width="1.2" class="beacon-ring-2" />
+  <!-- Destination Anchor Point -->
   <circle cx="1040" cy="260" r="5" fill="#722F37" />
 
   <!-- Target Annotation Pill with Pranov's live status -->
