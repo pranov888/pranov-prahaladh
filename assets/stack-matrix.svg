@@ -24,24 +24,30 @@
       .tag-text { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13.5px; font-weight: 700; fill: #1C0F14; }
       .tag-text-sm { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12.5px; font-weight: 700; fill: #1C0F14; }
 
-      /* Floating Rotating Plus Anchor */
-      .plus-spin {
-        animation: spinPlus 10s linear infinite;
-        transform-origin: 50px 825px;
+            /* Dynamic Live Telemetry Equalizer (replaces revolving X) */
+      .pulse-live {
+        animation: livePulse 2s ease-in-out infinite;
       }
-      @keyframes spinPlus {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
+      @keyframes livePulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
       }
 
-      /* Twinkling Star */
-      .star-twinkle {
-        animation: starBlink 2.5s ease-in-out infinite alternate;
+      .eq-bar-1, .eq-bar-2, .eq-bar-3, .eq-bar-4, .eq-bar-5 {
+        transform-box: fill-box;
+        transform-origin: 50% 100%;
       }
-      @keyframes starBlink {
-        0% { opacity: 0.6; }
-        100% { opacity: 1; }
-      }
+      .eq-bar-1 { animation: eqBounce1 1.1s ease-in-out infinite alternate; }
+      .eq-bar-2 { animation: eqBounce2 0.85s ease-in-out infinite alternate; }
+      .eq-bar-3 { animation: eqBounce3 1.35s ease-in-out infinite alternate; }
+      .eq-bar-4 { animation: eqBounce4 0.95s ease-in-out infinite alternate; }
+      .eq-bar-5 { animation: eqBounce5 1.25s ease-in-out infinite alternate; }
+
+      @keyframes eqBounce1 { 0% { transform: scaleY(0.3); } 100% { transform: scaleY(1.0); } }
+      @keyframes eqBounce2 { 0% { transform: scaleY(0.95); } 100% { transform: scaleY(0.25); } }
+      @keyframes eqBounce3 { 0% { transform: scaleY(0.4); } 100% { transform: scaleY(0.9); } }
+      @keyframes eqBounce4 { 0% { transform: scaleY(1.0); } 100% { transform: scaleY(0.35); } }
+      @keyframes eqBounce5 { 0% { transform: scaleY(0.3); } 100% { transform: scaleY(0.85); } }
 
       /* Living Synaptic Sparks */
       .synapse-spark {
@@ -74,28 +80,106 @@
 
   <line x1="40" y1="68" x2="1160" y2="68" stroke="#D6C4AE" stroke-width="1.2" />
 
+  <!-- ======================================================== -->
+  <!-- CATEGORY 00: CORE ARCHITECTURE & LOGIC // MY BRAIN      -->
+  <!-- ======================================================== -->
+  <g transform="translate(40, 78)">
+    <!-- Master Pod Shell with Burgundy Trim -->
+    <rect width="1120" height="88" rx="12" fill="url(#brain-card-grad)" stroke="#722F37" stroke-width="1.8" />
+    <rect x="3" y="3" width="1114" height="82" rx="9" fill="none" stroke="#D6C4AE" stroke-width="0.8" opacity="0.6" />
+
+    <!-- Left: Brain Icon Pod -->
+    <g transform="translate(18, 16)">
+      <rect width="56" height="56" rx="10" fill="#722F37" />
+      <!-- Stylized Anatomical & Neural Brain Graphic -->
+      <g transform="translate(13, 12)">
+        <!-- Left Hemisphere -->
+        <path d="M 15 4 C 9 4 5 7 5 12 C 2 14 1 18 2 21 C 3 25 7 28 11 29 C 13 29.5 14.5 29.5 15 29.5 Z" fill="#FAF6EE" />
+        <!-- Right Hemisphere -->
+        <path d="M 15 4 C 21 4 25 7 25 12 C 28 14 29 18 28 21 C 27 25 23 28 19 29 C 17 29.5 15.5 29.5 15 29.5 Z" fill="#FAF6EE" opacity="0.95" />
+        <!-- Fissure -->
+        <line x1="15" y1="4" x2="15" y2="29.5" stroke="#722F37" stroke-width="1.2" />
+        <!-- Sulci / Lobe folds -->
+        <path d="M 8 12 Q 12 14 15 12" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        <path d="M 5 19 Q 10 20 15 18" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        <path d="M 9 25 Q 12 24 15 26" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        
+        <path d="M 22 12 Q 18 14 15 12" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        <path d="M 25 19 Q 20 20 15 18" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        <path d="M 21 25 Q 18 24 15 26" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+
+        <!-- Neural Synapse Sparks in Gold -->
+        <circle cx="11" cy="13" r="1.5" fill="#F7B93E" class="synapse-spark" />
+        <circle cx="19" cy="13" r="1.5" fill="#F7B93E" class="synapse-spark" />
+        <circle cx="8" cy="20" r="1.5" fill="#F7B93E" class="synapse-spark" />
+        <circle cx="22" cy="20" r="1.5" fill="#F7B93E" class="synapse-spark" />
+        <circle cx="15" cy="24" r="1.7" fill="#F7B93E" class="synapse-spark" />
+      </g>
+    </g>
+
+    <!-- Brain Title & Classification -->
+    <g transform="translate(90, 20)">
+      <text x="0" y="10" fill="#722F37" font-family="'Space Mono', monospace" font-size="10.5" font-weight="700" letter-spacing="1.5">00 // CORE ARCHITECTURE &amp; LOGIC</text>
+      <text x="0" y="32" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="22" letter-spacing="-0.5">MY BRAIN</text>
+      <text x="0" y="48" fill="#886D5B" font-family="'Space Mono', monospace" font-size="9" font-weight="700">SYSTEM ARCHITECTURE · APPLIED COGNITION</text>
+    </g>
+
+    <!-- Subtle In-Card Divider -->
+    <line x1="390" y1="14" x2="390" y2="74" stroke="#D6C4AE" stroke-width="1.2" stroke-dasharray="2,2" />
+
+    <!-- Right: 4 Directives in 2x2 Grid -->
+    <g transform="translate(410, 14)">
+      <!-- Directive 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="345" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
+        <text x="12" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11.5">Clean Architecture &amp; Modular Codebases</text>
+      </g>
+
+      <!-- Directive 2 -->
+      <g transform="translate(360, 0)">
+        <rect width="332" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
+        <text x="12" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11.5">Pixel-Perfect Systems &amp; Motion Ergonomics</text>
+      </g>
+
+      <!-- Directive 3 -->
+      <g transform="translate(0, 32)">
+        <rect width="345" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
+        <text x="12" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11.5">High-Throughput State &amp; Resilient APIs</text>
+      </g>
+
+      <!-- Directive 4 -->
+      <g transform="translate(360, 32)">
+        <rect width="332" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
+        <text x="12" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11.5">Rapid Problem Synthesis &amp; Applied AI</text>
+      </g>
+    </g>
+  </g>
+
   <!-- Architectural Grid Dividers -->
+  <!-- Horizontal Line after Category 00 -->
+  <line x1="40" y1="176" x2="1160" y2="176" stroke="#D6C4AE" stroke-width="1.2" />
+
   <!-- Horizontal Center Line between Row 1 and Row 2 -->
-  <line x1="40" y1="424" x2="1160" y2="424" stroke="#D6C4AE" stroke-width="1.2" />
+  <line x1="40" y1="478" x2="1160" y2="478" stroke="#D6C4AE" stroke-width="1.2" />
+
   <!-- Horizontal Footer Line -->
   <line x1="40" y1="780" x2="1160" y2="780" stroke="#D6C4AE" stroke-width="1.2" />
 
   <!-- Vertical Divider Lines (4 Columns) -->
-  <line x1="320" y1="68" x2="320" y2="780" stroke="#D6C4AE" stroke-width="1.2" />
-  <line x1="600" y1="68" x2="600" y2="780" stroke="#D6C4AE" stroke-width="1.2" />
-  <line x1="880" y1="68" x2="880" y2="780" stroke="#D6C4AE" stroke-width="1.2" />
+  <line x1="320" y1="176" x2="320" y2="780" stroke="#D6C4AE" stroke-width="1.2" />
+  <line x1="600" y1="176" x2="600" y2="780" stroke="#D6C4AE" stroke-width="1.2" />
+  <line x1="880" y1="176" x2="880" y2="780" stroke="#D6C4AE" stroke-width="1.2" />
 
   <!-- Swiss Crosshairs on Grid Intersections -->
-  <text x="320" y="428" fill="#B7A89A" font-family="monospace" font-size="13" text-anchor="middle">+</text>
-  <text x="600" y="428" fill="#B7A89A" font-family="monospace" font-size="13" text-anchor="middle">+</text>
-  <text x="880" y="428" fill="#B7A89A" font-family="monospace" font-size="13" text-anchor="middle">+</text>
+  <text x="320" y="482" fill="#B7A89A" font-family="monospace" font-size="13" text-anchor="middle">+</text>
+  <text x="600" y="482" fill="#B7A89A" font-family="monospace" font-size="13" text-anchor="middle">+</text>
+  <text x="880" y="482" fill="#B7A89A" font-family="monospace" font-size="13" text-anchor="middle">+</text>
 
   <!-- ======================================================== -->
-  <!-- ROW 1 (y: 85 to 410)                                    -->
+  <!-- ROW 1 (y: 192 to 470)                                   -->
   <!-- ======================================================== -->
-
   <!-- CELL 01: LANGUAGES -->
-  <g transform="translate(50, 88)">
+  <g transform="translate(50, 192)">
     <text x="0" y="18" class="cat-title">01 // LANGUAGES</text>
     <text x="0" y="38" class="cat-sub">CORE RUNTIMES &amp; SCRIPTS</text>
     <line x1="0" y1="48" x2="260" y2="48" stroke="#E2D4BF" stroke-width="1" />
@@ -161,8 +245,9 @@
     </g>
   </g>
 
+
   <!-- CELL 02: INTERFACES -->
-  <g transform="translate(330, 88)">
+  <g transform="translate(330, 192)">
     <text x="0" y="18" class="cat-title">02 // INTERFACES</text>
     <text x="0" y="38" class="cat-sub">FRONTEND &amp; MOTION</text>
     <line x1="0" y1="48" x2="260" y2="48" stroke="#E2D4BF" stroke-width="1" />
@@ -252,8 +337,9 @@
     </g>
   </g>
 
+
   <!-- CELL 03: SERVICES -->
-  <g transform="translate(610, 88)">
+  <g transform="translate(610, 192)">
     <text x="0" y="18" class="cat-title">03 // SERVICES</text>
     <text x="0" y="38" class="cat-sub">BACKEND &amp; NETWORKING</text>
     <line x1="0" y1="48" x2="260" y2="48" stroke="#E2D4BF" stroke-width="1" />
@@ -330,8 +416,9 @@
     </g>
   </g>
 
+
   <!-- CELL 04: DATA & STORAGE -->
-  <g transform="translate(890, 88)">
+  <g transform="translate(890, 192)">
     <text x="0" y="18" class="cat-title">04 // DATA &amp; STORAGE</text>
     <text x="0" y="38" class="cat-sub">DATABASES &amp; CACHES</text>
     <line x1="0" y1="48" x2="260" y2="48" stroke="#E2D4BF" stroke-width="1" />
@@ -400,87 +487,12 @@
   </g>
 
 
+
   <!-- ======================================================== -->
-  <!-- CENTERPIECE: PRIMARY SKILL // MY BRAIN (WETWARE v2.4)    -->
+  <!-- ROW 2 (y: 494 to 770)                                   -->
   <!-- ======================================================== -->
-  <g transform="translate(180, 328)">
-    <!-- Master Pod Shell with Burgundy Trim -->
-    <rect width="840" height="84" rx="14" fill="url(#brain-card-grad)" stroke="#722F37" stroke-width="1.8" />
-    <rect x="3" y="3" width="834" height="78" rx="11" fill="none" stroke="#D6C4AE" stroke-width="0.8" opacity="0.6" />
-
-    <!-- Left: Brain Icon Pod -->
-    <g transform="translate(18, 16)">
-      <rect width="52" height="52" rx="10" fill="#722F37" />
-      <!-- Stylized Anatomical & Neural Brain Graphic -->
-      <g transform="translate(11, 10)">
-        <!-- Left Hemisphere -->
-        <path d="M 15 4 C 9 4 5 7 5 12 C 2 14 1 18 2 21 C 3 25 7 28 11 29 C 13 29.5 14.5 29.5 15 29.5 Z" fill="#FAF6EE" />
-        <!-- Right Hemisphere -->
-        <path d="M 15 4 C 21 4 25 7 25 12 C 28 14 29 18 28 21 C 27 25 23 28 19 29 C 17 29.5 15.5 29.5 15 29.5 Z" fill="#FAF6EE" opacity="0.95" />
-        <!-- Fissure -->
-        <line x1="15" y1="4" x2="15" y2="29.5" stroke="#722F37" stroke-width="1.2" />
-        <!-- Sulci / Lobe folds -->
-        <path d="M 8 12 Q 12 14 15 12" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
-        <path d="M 5 19 Q 10 20 15 18" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
-        <path d="M 9 25 Q 12 24 15 26" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
-        
-        <path d="M 22 12 Q 18 14 15 12" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
-        <path d="M 25 19 Q 20 20 15 18" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
-        <path d="M 21 25 Q 18 24 15 26" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
-
-        <!-- Neural Synapse Sparks in Gold -->
-        <circle cx="11" cy="13" r="1.5" fill="#F7B93E" class="synapse-spark" />
-        <circle cx="19" cy="13" r="1.5" fill="#F7B93E" class="synapse-spark" />
-        <circle cx="8" cy="20" r="1.5" fill="#F7B93E" class="synapse-spark" />
-        <circle cx="22" cy="20" r="1.5" fill="#F7B93E" class="synapse-spark" />
-        <circle cx="15" cy="24" r="1.7" fill="#F7B93E" class="synapse-spark" />
-      </g>
-    </g>
-
-    <!-- Brain Title & Classification -->
-    <g transform="translate(82, 20)">
-      <text x="0" y="10" fill="#722F37" font-family="'Space Mono', monospace" font-size="10" font-weight="700" letter-spacing="1.5">00 // MASTER PROCESSOR</text>
-      <text x="0" y="32" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="21" letter-spacing="-0.5">MY BRAIN</text>
-      <text x="0" y="48" fill="#886D5B" font-family="'Space Mono', monospace" font-size="9" font-weight="700">WETWARE v2.4 · 100% ORGANIC</text>
-    </g>
-
-    <!-- Subtle In-Card Divider -->
-    <line x1="286" y1="14" x2="286" y2="70" stroke="#D6C4AE" stroke-width="1.2" stroke-dasharray="2,2" />
-
-    <!-- Right: 4 Humorous Capability Chips in 2x2 Grid -->
-    <g transform="translate(300, 12)">
-      <!-- Chip 1: Coffee & Epiphanies -->
-      <g transform="translate(0, 0)">
-        <rect width="256" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
-        <text x="10" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11">☕ Chennai Filter Coffee &amp; 2 AM Epiphanies</text>
-      </g>
-
-      <!-- Chip 2: Shower Debugger -->
-      <g transform="translate(266, 0)">
-        <rect width="256" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
-        <text x="10" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11">🚿 Shower Debugging (99.8% accurate)</text>
-      </g>
-
-      <!-- Chip 3: Optical Radar -->
-      <g transform="translate(0, 32)">
-        <rect width="256" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
-        <text x="10" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11">🎯 Optical Radar: Spots 1px alignment flaws</text>
-      </g>
-
-      <!-- Chip 4: Translates Chaos into UI -->
-      <g transform="translate(266, 32)">
-        <rect width="256" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
-        <text x="10" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11">🧠 Turns Caffeine &amp; Chaos into Clean UI</text>
-      </g>
-    </g>
-  </g>
-
-    <!-- ======================================================== -->
-  <!-- ROW 2 (y: 440 to 765)                                   -->
-  <!-- ======================================================== -->
-
   <!-- CELL 05: INFRASTRUCTURE -->
-  <g transform="translate(50, 442)">
+  <g transform="translate(50, 494)">
     <text x="0" y="18" class="cat-title">05 // INFRASTRUCTURE</text>
     <text x="0" y="38" class="cat-sub">DEVOPS &amp; DEPLOYMENT</text>
     <line x1="0" y1="48" x2="260" y2="48" stroke="#E2D4BF" stroke-width="1" />
@@ -568,8 +580,9 @@
     </g>
   </g>
 
+
   <!-- CELL 06: QUALITY & DX -->
-  <g transform="translate(330, 442)">
+  <g transform="translate(330, 494)">
     <text x="0" y="18" class="cat-title">06 // QUALITY &amp; DX</text>
     <text x="0" y="38" class="cat-sub">TESTING &amp; OBSERVABILITY</text>
     <line x1="0" y1="48" x2="260" y2="48" stroke="#E2D4BF" stroke-width="1" />
@@ -649,8 +662,9 @@
     </g>
   </g>
 
+
   <!-- CELL 07: PLUGS INTO -->
-  <g transform="translate(610, 442)">
+  <g transform="translate(610, 494)">
     <text x="0" y="18" class="cat-title">07 // PLUGS INTO</text>
     <text x="0" y="38" class="cat-sub">ECOSYSTEMS &amp; PAYMENTS</text>
     <line x1="0" y1="48" x2="260" y2="48" stroke="#E2D4BF" stroke-width="1" />
@@ -722,8 +736,9 @@
     </g>
   </g>
 
+
   <!-- CELL 08: DESIGN & CREATIVE -->
-  <g transform="translate(890, 442)">
+  <g transform="translate(890, 494)">
     <text x="0" y="18" class="cat-title">08 // DESIGN &amp; CREATIVE</text>
     <text x="0" y="38" class="cat-sub">3D, MOTION &amp; BRANDING</text>
     <line x1="0" y1="48" x2="260" y2="48" stroke="#E2D4BF" stroke-width="1" />
@@ -815,28 +830,37 @@
     </g>
   </g>
 
-  <!-- ==================== FOOTER STRIP (PURE METADATA MENTIONS) ==================== -->
-  <!-- Floating Rotating Plus Anchor on Left -->
-  <g class="plus-spin" transform="translate(50, 825)">
-    <circle cx="0" cy="0" r="16" fill="#FAF7F2" stroke="#722F37" stroke-width="1.8" />
-    <line x1="-6" y1="0" x2="6" y2="0" stroke="#722F37" stroke-width="2" />
-    <line x1="0" y1="-6" x2="0" y2="6" stroke="#722F37" stroke-width="2" />
+
+  <!-- ==================== FOOTER STRIP ==================== -->
+  <!-- Dynamic Live Signal Equalizer on Left (replaces revolving X) -->
+  <g transform="translate(48, 808)">
+    <rect x="0" y="0" width="76" height="32" rx="7" fill="#FAF7F2" stroke="#722F37" stroke-width="1.4" />
+    <!-- Live Activity Pulse LED -->
+    <circle cx="14" cy="16" r="3.5" fill="#722F37" class="pulse-live" />
+    <!-- 5 Animated Equalizer Bars -->
+    <g transform="translate(30, 9)">
+      <rect class="eq-bar-1" x="0"  y="0" width="3.5" height="14" rx="1.5" fill="#722F37" />
+      <rect class="eq-bar-2" x="7"  y="0" width="3.5" height="14" rx="1.5" fill="#722F37" />
+      <rect class="eq-bar-3" x="14" y="0" width="3.5" height="14" rx="1.5" fill="#722F37" />
+      <rect class="eq-bar-4" x="21" y="0" width="3.5" height="14" rx="1.5" fill="#722F37" />
+      <rect class="eq-bar-5" x="28" y="0" width="3.5" height="14" rx="1.5" fill="#722F37" />
+    </g>
   </g>
 
-  <!-- Location & Discipline Mention -->
-  <g transform="translate(85, 830)">
-    <text x="0" y="0" fill="#886D5B" class="mono" font-size="12" font-weight="700" letter-spacing="1">LOCATION: CHENNAI, INDIA · TIMEZONE: IST [UTC+5:30]</text>
+  <!-- Global Workspace & Engineering Discipline Mention -->
+  <g transform="translate(140, 829)">
+    <text x="0" y="0" fill="#886D5B" class="mono" font-size="11.5" font-weight="700" letter-spacing="1">SYSTEM: DISTRIBUTED &amp; ASYNC · GLOBAL PRODUCTION AVAILABILITY</text>
   </g>
 
   <!-- Technical Status Chips on Right -->
-  <g transform="translate(685, 810)">
-    <rect x="0" y="0" width="195" height="30" rx="6" fill="#FAF7F2" stroke="#D6C4AE" stroke-width="1.2" />
-    <circle cx="16" cy="15" r="4" fill="#722F37" />
-    <text x="28" y="19" fill="#722F37" class="mono" font-size="11" font-weight="700">STATUS: OPEN TO SHIP</text>
+  <g transform="translate(735, 808)">
+    <rect x="0" y="0" width="180" height="32" rx="6" fill="#FAF7F2" stroke="#D6C4AE" stroke-width="1.2" />
+    <circle cx="16" cy="16" r="4" fill="#722F37" />
+    <text x="28" y="20" fill="#722F37" class="mono" font-size="11" font-weight="700">STATUS: OPEN TO SHIP</text>
   </g>
 
-  <g transform="translate(895, 810)">
-    <rect x="0" y="0" width="220" height="30" rx="6" fill="#FAF7F2" stroke="#D6C4AE" stroke-width="1.2" />
-    <text x="14" y="19" fill="#722F37" class="mono" font-size="11" font-weight="700">STACK: PRODUCTION READY ✦</text>
+  <g transform="translate(930, 808)">
+    <rect x="0" y="0" width="190" height="32" rx="6" fill="#FAF7F2" stroke="#D6C4AE" stroke-width="1.2" />
+    <text x="14" y="20" fill="#722F37" class="mono" font-size="11" font-weight="700">STACK: PRODUCTION READY</text>
   </g>
 </svg>
