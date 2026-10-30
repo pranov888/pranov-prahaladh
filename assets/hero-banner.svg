@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="auto">
   <defs>
-    <!-- Background Gradient: Warm Light Mocha Cream (Image 2) -->
+    <!-- Background Gradient: Warm Light Mocha Cream -->
     <linearGradient id="bg-light-mocha" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#F7F2E8" />
       <stop offset="50%" stop-color="#EEDDC7" />
@@ -75,15 +75,15 @@
       /* Twinkling Celestial Sparkles */
       .twinkle-1 {
         animation: starTwinkle 3.2s infinite ease-in-out;
-        transform-origin: 920px 140px;
+        transform-origin: 940px 140px;
       }
       .twinkle-2 {
         animation: starTwinkle 4s infinite ease-in-out 1.2s;
-        transform-origin: 1060px 80px;
+        transform-origin: 1080px 80px;
       }
       .twinkle-3 {
         animation: starTwinkle 3.6s infinite ease-in-out 2s;
-        transform-origin: 820px 220px;
+        transform-origin: 800px 220px;
       }
       @keyframes starTwinkle {
         0%, 100% { transform: scale(0.8) rotate(0deg); opacity: 0.5; }
@@ -99,18 +99,18 @@
   <!-- Outer Hairline Frame in Cosmic Latte -->
   <rect x="1" y="1" width="1198" height="398" fill="none" stroke="#D1C0AA" stroke-width="1.5" rx="15" />
 
-  <!-- Subtle Ambient Glow -->
+  <!-- Ambient Burgundy Glow -->
   <circle cx="960" cy="180" r="180" fill="url(#burgundy-ambient)" />
 
-  <!-- Twinkling Celestial Stars (✦) from Image 2 -->
+  <!-- Twinkling Celestial Stars (✦) -->
   <g fill="#722F37" class="twinkle-1">
-    <text x="920" y="140" font-size="22" text-anchor="middle">✦</text>
+    <text x="940" y="140" font-size="22" text-anchor="middle">✦</text>
   </g>
   <g fill="#B7A89A" class="twinkle-2">
-    <text x="1060" y="80" font-size="16" text-anchor="middle">✦</text>
+    <text x="1080" y="80" font-size="16" text-anchor="middle">✦</text>
   </g>
   <g fill="#722F37" class="twinkle-3">
-    <text x="820" y="220" font-size="20" text-anchor="middle">✦</text>
+    <text x="800" y="220" font-size="20" text-anchor="middle">✦</text>
   </g>
 
   <!-- Technical Corner Crosshairs -->
@@ -121,31 +121,31 @@
     <path d="M 1155 375 L 1170 375 M 1162.5 367.5 L 1162.5 382.5" />
   </g>
 
-  <!-- Header Micro-Navigation Strip -->
+  <!-- Header Micro-Navigation Strip (Pranov's Real Identity) -->
   <g transform="translate(60, 48)">
     <circle cx="6" cy="6" r="4.5" fill="#722F37" />
     <circle cx="6" cy="6" r="8" fill="none" stroke="#722F37" stroke-width="1" class="beacon-pulse" />
-    <text x="24" y="10" fill="#722F37" class="mono" font-size="11" letter-spacing="1.5" font-weight="700">STATUS: OPEN FOR NEW VENTURES</text>
-    <text x="560" y="10" fill="#886D5B" class="mono" font-size="11" letter-spacing="1.2">COSMIC LATTE // DEEP BURGUNDY</text>
-    <text x="960" y="10" fill="#722F37" class="mono" font-size="11" letter-spacing="1.5" font-weight="700">CHENNAI, IN</text>
+    <text x="24" y="10" fill="#722F37" class="mono" font-size="11" letter-spacing="1.5" font-weight="700">STATUS: DEBUG AT MIDNIGHT, SHIP BEFORE SUNRISE</text>
+    <text x="620" y="10" fill="#886D5B" class="mono" font-size="11" letter-spacing="1.2">PRANOVDESIGN.VERCEL.APP</text>
+    <text x="970" y="10" fill="#722F37" class="mono" font-size="11" letter-spacing="1.5" font-weight="700">CHENNAI, IN</text>
   </g>
 
   <line x1="60" y1="72" x2="1140" y2="72" stroke="#D1C0AA" stroke-width="1" />
 
-  <!-- Main Hero Typography -->
+  <!-- Main Hero Typography (Pranov's Real Content from Main) -->
   <g transform="translate(60, 160)">
     <!-- Line 1: Identity & Discipline -->
     <text x="0" y="0" fill="#886D5B" class="mono" font-size="12" letter-spacing="2.5" font-weight="700">
       PRANOV PRAHALADH — UI/UX DESIGNER &amp; FRONTEND DEVELOPER
     </text>
 
-    <!-- Line 2: Giant Editorial Headline -->
-    <text x="0" y="65" fill="#241117" class="grotesk" font-size="64" font-weight="700" letter-spacing="-1.5">
-      Designer who
+    <!-- Line 2: Giant Editorial Headline with Pranov's core mantra -->
+    <text x="0" y="65" fill="#241117" class="grotesk" font-size="56" font-weight="700" letter-spacing="-1.5">
+      Until it feels right,
     </text>
 
-    <!-- Tactile Audio Hardware Pod in Mocha Cream & Deep Burgundy -->
-    <g transform="translate(460, 10)">
+    <!-- Tactile Audio Hardware Pod (Pranov's Focus: Motion Design & Micro-interactions) -->
+    <g transform="translate(540, 10)">
       <!-- Pod Outer Shell -->
       <rect x="0" y="0" width="220" height="66" rx="33" fill="url(#pod-light-grad)" stroke="#C7B49D" stroke-width="1.5" />
       <rect x="3" y="3" width="214" height="60" rx="30" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
@@ -155,21 +155,20 @@
         <circle cx="34" cy="33" r="22" fill="#2A141D" stroke="#542B39" stroke-width="1" />
         <circle cx="34" cy="33" r="14" fill="#3D1D28" stroke="#722F37" stroke-width="0.8" />
         <circle cx="34" cy="33" r="5" fill="#E8DCC6" />
-        <!-- Radial needle tick -->
         <line x1="34" y1="11" x2="34" y2="17" stroke="#FAF6EE" stroke-width="1.5" />
       </g>
 
       <!-- Center OLED Mini Screen -->
       <rect x="66" y="18" width="88" height="30" rx="4" fill="#2A141D" stroke="#4D2735" stroke-width="0.8" />
-      <text x="73" y="29" fill="#E8DCC6" class="mono" font-size="7" letter-spacing="0.5" font-weight="700">TRACK // 01</text>
-      <text x="73" y="41" fill="#FAF6EE" class="mono" font-size="7.5" font-weight="700">COSMIC LATTE</text>
+      <text x="73" y="29" fill="#E8DCC6" class="mono" font-size="7" letter-spacing="0.5" font-weight="700">CURRENTLY // FOCUS</text>
+      <text x="73" y="41" fill="#FAF6EE" class="mono" font-size="7.5" font-weight="700">MOTION DESIGN</text>
 
       <!-- Right Speaker with Equalizer -->
       <g class="turntable-spin-right">
         <circle cx="186" cy="33" r="22" fill="#2A141D" stroke="#542B39" stroke-width="1" />
         <line x1="186" y1="11" x2="186" y2="17" stroke="#FAF6EE" stroke-width="1.5" />
       </g>
-      <!-- Animated Equalizer Inside Right Speaker in Deep Burgundy -->
+      <!-- Animated Equalizer Inside Right Speaker -->
       <g transform="translate(176, 23)" fill="#722F37">
         <rect x="0" y="10" width="2.5" height="10" rx="1" class="eq1" />
         <rect x="5" y="6" width="2.5" height="14" rx="1" class="eq2" />
@@ -179,14 +178,14 @@
       </g>
     </g>
 
-    <!-- Line 2 Continuation: BUILDS in Deep Burgundy Italics -->
-    <text x="705" y="65" fill="#722F37" class="serif-display" font-size="74" font-weight="700" letter-spacing="-0.5">
-      Builds.
+    <!-- Line 2 Continuation: it isn't done. in Deep Burgundy Italics -->
+    <text x="785" y="65" fill="#722F37" class="serif-display" font-size="64" font-weight="700" letter-spacing="-0.5">
+      it isn't done.
     </text>
 
-    <!-- Manifesto from old main branch -->
+    <!-- Manifesto from Pranov's whoami -->
     <text x="0" y="125" fill="#6B4F40" class="grotesk" font-size="18" font-weight="500">
-      "Until it feels right, it isn't done. Obsess over the rest."
+      "Design is not how it looks. It's how it works." — Obsess over the rest.
     </text>
   </g>
 
@@ -194,9 +193,8 @@
   <line x1="60" y1="335" x2="1140" y2="335" stroke="#D1C0AA" stroke-width="1" />
 
   <g transform="translate(60, 362)">
-    <text x="0" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">INDEX: [001—004]</text>
-    <text x="280" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">DISCIPLINE: MOTION DESIGN &amp; DESIGN SYSTEMS</text>
-    <text x="730" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">PORTFOLIO: PRANOVDESIGN.VERCEL.APP</text>
-    <text x="1000" y="0" fill="#722F37" class="mono" font-size="10" font-weight="700" letter-spacing="1">SCROLL ↓</text>
+    <text x="0" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">LEARNING: [MOTION DESIGN · DESIGN SYSTEMS · MICRO-INTERACTIONS]</text>
+    <text x="780" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">ROLE: CRAFTING FLUID WEB EXPERIENCES</text>
+    <text x="1080" y="0" fill="#722F37" class="mono" font-size="10" font-weight="700" letter-spacing="1">SCROLL ↓</text>
   </g>
 </svg>
