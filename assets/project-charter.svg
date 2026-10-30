@@ -12,7 +12,7 @@
       <stop offset="100%" stop-color="#F2E7D8" />
     </linearGradient>
 
-    <style>
+    <style><![CDATA[
       @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap');
 
       .huge-title { font-family: 'Space Grotesk', sans-serif; font-weight: 800; }
@@ -46,7 +46,7 @@
         0% { transform: scale(0.6); opacity: 1; }
         100% { transform: scale(1.6); opacity: 0; }
       }
-    </style>
+    ]]></style>
   </defs>
 
   <!-- Container Base -->

@@ -25,7 +25,7 @@
       <circle cx="0" cy="0" r="1.2" fill="#B7A89A" opacity="0.6" />
     </pattern>
 
-    <style>
+    <style><![CDATA[
       @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,500;1,6..72,700&amp;family=Space+Grotesk:wght@500;700&amp;family=Space+Mono:wght@400;700&amp;display=swap');
 
       .mono { font-family: 'Space Mono', monospace; }
@@ -89,7 +89,7 @@
         0%, 100% { transform: scale(0.8) rotate(0deg); opacity: 0.5; }
         50% { transform: scale(1.3) rotate(90deg); opacity: 1; }
       }
-    </style>
+    ]]></style>
   </defs>
 
   <!-- Container Base with Light Mocha Cream Background -->
