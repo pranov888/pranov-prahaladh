@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradient: Warm Light Mocha Cream (Image 2) -->
+    <linearGradient id="bg-light-mocha" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F2E8" />
+      <stop offset="50%" stop-color="#EEDDC7" />
+      <stop offset="100%" stop-color="#F5EFE6" />
+    </linearGradient>
+
+    <!-- Tactile Hardware Pod Shell -->
+    <linearGradient id="pod-light-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6EE" />
+      <stop offset="100%" stop-color="#E4D5BE" />
+    </linearGradient>
+
+    <!-- Ambient Burgundy Glow -->
+    <radialGradient id="burgundy-ambient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#722F37" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#722F37" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Celestial Grid Pattern in Cosmic Latte -->
+    <pattern id="celestial-grid-light" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E2D4BF" stroke-width="0.8" />
+      <circle cx="0" cy="0" r="1.2" fill="#B7A89A" opacity="0.6" />
+    </pattern>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,500;1,6..72,700&amp;family=Space+Grotesk:wght@500;700&amp;family=Space+Mono:wght@400;700&amp;display=swap');
+
+      .mono { font-family: 'Space Mono', monospace; }
+      .grotesk { font-family: 'Space Grotesk', -apple-system, sans-serif; }
+      .serif-display { font-family: 'Newsreader', 'Cinzel', Georgia, serif; font-style: italic; }
+
+      /* Pulsing Status Beacon */
+      .beacon-pulse {
+        animation: beaconGlow 2.2s infinite ease-in-out;
+      }
+      @keyframes beaconGlow {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.35); opacity: 0.35; }
+      }
+
+      /* Animated Turntable Discs */
+      .turntable-spin-left {
+        animation: spinDisc 8s linear infinite;
+        transform-origin: 34px 33px;
+      }
+      .turntable-spin-right {
+        animation: spinDiscRev 10s linear infinite;
+        transform-origin: 186px 33px;
+      }
+      @keyframes spinDisc {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes spinDiscRev {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+
+      /* Animated Equalizer Bars in Deep Burgundy */
+      .eq1 { animation: eqAnim1 1.1s infinite ease-in-out alternate; }
+      .eq2 { animation: eqAnim2 0.8s infinite ease-in-out alternate; }
+      .eq3 { animation: eqAnim3 1.3s infinite ease-in-out alternate; }
+      .eq4 { animation: eqAnim4 0.9s infinite ease-in-out alternate; }
+      .eq5 { animation: eqAnim5 1.2s infinite ease-in-out alternate; }
+
+      @keyframes eq1 { 0% { height: 4px; y: 16px; } 100% { height: 16px; y: 4px; } }
+      @keyframes eq2 { 0% { height: 16px; y: 4px; } 100% { height: 6px; y: 14px; } }
+      @keyframes eq3 { 0% { height: 7px; y: 13px; } 100% { height: 18px; y: 2px; } }
+      @keyframes eq4 { 0% { height: 15px; y: 5px; } 100% { height: 5px; y: 15px; } }
+      @keyframes eq5 { 0% { height: 5px; y: 15px; } 100% { height: 15px; y: 5px; } }
+
+      /* Twinkling Celestial Sparkles */
+      .twinkle-1 {
+        animation: starTwinkle 3.2s infinite ease-in-out;
+        transform-origin: 920px 140px;
+      }
+      .twinkle-2 {
+        animation: starTwinkle 4s infinite ease-in-out 1.2s;
+        transform-origin: 1060px 80px;
+      }
+      .twinkle-3 {
+        animation: starTwinkle 3.6s infinite ease-in-out 2s;
+        transform-origin: 820px 220px;
+      }
+      @keyframes starTwinkle {
+        0%, 100% { transform: scale(0.8) rotate(0deg); opacity: 0.5; }
+        50% { transform: scale(1.3) rotate(90deg); opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Container Base with Light Mocha Cream Background -->
+  <rect width="1200" height="400" fill="url(#bg-light-mocha)" rx="16" />
+  <rect width="1200" height="400" fill="url(#celestial-grid-light)" rx="16" />
+
+  <!-- Outer Hairline Frame in Cosmic Latte -->
+  <rect x="1" y="1" width="1198" height="398" fill="none" stroke="#D1C0AA" stroke-width="1.5" rx="15" />
+
+  <!-- Subtle Ambient Glow -->
+  <circle cx="960" cy="180" r="180" fill="url(#burgundy-ambient)" />
+
+  <!-- Twinkling Celestial Stars (✦) from Image 2 -->
+  <g fill="#722F37" class="twinkle-1">
+    <text x="920" y="140" font-size="22" text-anchor="middle">✦</text>
+  </g>
+  <g fill="#B7A89A" class="twinkle-2">
+    <text x="1060" y="80" font-size="16" text-anchor="middle">✦</text>
+  </g>
+  <g fill="#722F37" class="twinkle-3">
+    <text x="820" y="220" font-size="20" text-anchor="middle">✦</text>
+  </g>
+
+  <!-- Technical Corner Crosshairs -->
+  <g stroke="#B7A89A" stroke-width="1.2">
+    <path d="M 30 25 L 45 25 M 37.5 17.5 L 37.5 32.5" />
+    <path d="M 1155 25 L 1170 25 M 1162.5 17.5 L 1162.5 32.5" />
+    <path d="M 30 375 L 45 375 M 37.5 367.5 L 37.5 382.5" />
+    <path d="M 1155 375 L 1170 375 M 1162.5 367.5 L 1162.5 382.5" />
+  </g>
+
+  <!-- Header Micro-Navigation Strip -->
+  <g transform="translate(60, 48)">
+    <circle cx="6" cy="6" r="4.5" fill="#722F37" />
+    <circle cx="6" cy="6" r="8" fill="none" stroke="#722F37" stroke-width="1" class="beacon-pulse" />
+    <text x="24" y="10" fill="#722F37" class="mono" font-size="11" letter-spacing="1.5" font-weight="700">STATUS: OPEN FOR NEW VENTURES</text>
+    <text x="560" y="10" fill="#886D5B" class="mono" font-size="11" letter-spacing="1.2">COSMIC LATTE // DEEP BURGUNDY</text>
+    <text x="960" y="10" fill="#722F37" class="mono" font-size="11" letter-spacing="1.5" font-weight="700">CHENNAI, IN</text>
+  </g>
+
+  <line x1="60" y1="72" x2="1140" y2="72" stroke="#D1C0AA" stroke-width="1" />
+
+  <!-- Main Hero Typography -->
+  <g transform="translate(60, 160)">
+    <!-- Line 1: Identity & Discipline -->
+    <text x="0" y="0" fill="#886D5B" class="mono" font-size="12" letter-spacing="2.5" font-weight="700">
+      PRANOV PRAHALADH — UI/UX DESIGNER &amp; FRONTEND DEVELOPER
+    </text>
+
+    <!-- Line 2: Giant Editorial Headline -->
+    <text x="0" y="65" fill="#241117" class="grotesk" font-size="64" font-weight="700" letter-spacing="-1.5">
+      Designer who
+    </text>
+
+    <!-- Tactile Audio Hardware Pod in Mocha Cream & Deep Burgundy -->
+    <g transform="translate(460, 10)">
+      <!-- Pod Outer Shell -->
+      <rect x="0" y="0" width="220" height="66" rx="33" fill="url(#pod-light-grad)" stroke="#C7B49D" stroke-width="1.5" />
+      <rect x="3" y="3" width="214" height="60" rx="30" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+
+      <!-- Left Speaker / Rotating Turntable Disc -->
+      <g class="turntable-spin-left">
+        <circle cx="34" cy="33" r="22" fill="#2A141D" stroke="#542B39" stroke-width="1" />
+        <circle cx="34" cy="33" r="14" fill="#3D1D28" stroke="#722F37" stroke-width="0.8" />
+        <circle cx="34" cy="33" r="5" fill="#E8DCC6" />
+        <!-- Radial needle tick -->
+        <line x1="34" y1="11" x2="34" y2="17" stroke="#FAF6EE" stroke-width="1.5" />
+      </g>
+
+      <!-- Center OLED Mini Screen -->
+      <rect x="66" y="18" width="88" height="30" rx="4" fill="#2A141D" stroke="#4D2735" stroke-width="0.8" />
+      <text x="73" y="29" fill="#E8DCC6" class="mono" font-size="7" letter-spacing="0.5" font-weight="700">TRACK // 01</text>
+      <text x="73" y="41" fill="#FAF6EE" class="mono" font-size="7.5" font-weight="700">COSMIC LATTE</text>
+
+      <!-- Right Speaker with Equalizer -->
+      <g class="turntable-spin-right">
+        <circle cx="186" cy="33" r="22" fill="#2A141D" stroke="#542B39" stroke-width="1" />
+        <line x1="186" y1="11" x2="186" y2="17" stroke="#FAF6EE" stroke-width="1.5" />
+      </g>
+      <!-- Animated Equalizer Inside Right Speaker in Deep Burgundy -->
+      <g transform="translate(176, 23)" fill="#722F37">
+        <rect x="0" y="10" width="2.5" height="10" rx="1" class="eq1" />
+        <rect x="5" y="6" width="2.5" height="14" rx="1" class="eq2" />
+        <rect x="10" y="4" width="2.5" height="16" rx="1" class="eq3" />
+        <rect x="15" y="8" width="2.5" height="12" rx="1" class="eq4" />
+        <rect x="20" y="11" width="2.5" height="9" rx="1" class="eq5" />
+      </g>
+    </g>
+
+    <!-- Line 2 Continuation: BUILDS in Deep Burgundy Italics -->
+    <text x="705" y="65" fill="#722F37" class="serif-display" font-size="74" font-weight="700" letter-spacing="-0.5">
+      Builds.
+    </text>
+
+    <!-- Manifesto from old main branch -->
+    <text x="0" y="125" fill="#6B4F40" class="grotesk" font-size="18" font-weight="500">
+      "Until it feels right, it isn't done. Obsess over the rest."
+    </text>
+  </g>
+
+  <!-- Bottom Technical Coordinate Strip -->
+  <line x1="60" y1="335" x2="1140" y2="335" stroke="#D1C0AA" stroke-width="1" />
+
+  <g transform="translate(60, 362)">
+    <text x="0" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">INDEX: [001—004]</text>
+    <text x="280" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">DISCIPLINE: MOTION DESIGN &amp; DESIGN SYSTEMS</text>
+    <text x="730" y="0" fill="#886D5B" class="mono" font-size="10" letter-spacing="1">PORTFOLIO: PRANOVDESIGN.VERCEL.APP</text>
+    <text x="1000" y="0" fill="#722F37" class="mono" font-size="10" font-weight="700" letter-spacing="1">SCROLL ↓</text>
+  </g>
+</svg>

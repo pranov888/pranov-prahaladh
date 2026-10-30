@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradient: Light Mocha Cream (Image 2) -->
+    <linearGradient id="metric-light-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F2E8" />
+      <stop offset="100%" stop-color="#EFE4D3" />
+    </linearGradient>
+
+    <!-- Deep Burgundy Luxury Highlight Card Gradient -->
+    <linearGradient id="burgundy-card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8C3B45" />
+      <stop offset="50%" stop-color="#722F37" />
+      <stop offset="100%" stop-color="#551F26" />
+    </linearGradient>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Space+Mono:wght@400;700&amp;display=swap');
+
+      .num { font-family: 'Space Grotesk', -apple-system, sans-serif; font-weight: 700; }
+      .mono { font-family: 'Space Mono', monospace; }
+      .desc { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 13px; line-height: 1.4; }
+
+      /* Pulse Ring Animation */
+      .pulse-ring-1 {
+        animation: ringPulse1 3.5s infinite ease-out;
+        transform-origin: 950px 225px;
+      }
+      .pulse-ring-2 {
+        animation: ringPulse2 3.5s infinite ease-out 1.2s;
+        transform-origin: 950px 225px;
+      }
+      @keyframes ringPulse1 {
+        0% { transform: scale(0.6); opacity: 0.9; }
+        60% { transform: scale(1.3); opacity: 0.15; }
+        100% { transform: scale(1.5); opacity: 0; }
+      }
+      @keyframes ringPulse2 {
+        0% { transform: scale(0.6); opacity: 0.9; }
+        60% { transform: scale(1.3); opacity: 0.15; }
+        100% { transform: scale(1.5); opacity: 0; }
+      }
+
+      /* Floating Star */
+      .star-float {
+        animation: starFloat 3s infinite ease-in-out alternate;
+        transform-origin: 1140px 50px;
+      }
+      @keyframes starFloat {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-6px) rotate(45deg); }
+      }
+    </style>
+  </defs>
+
+  <!-- Container Base with Light Mocha Cream -->
+  <rect width="1200" height="280" fill="url(#metric-light-bg)" rx="14" />
+  <rect x="1" y="1" width="1198" height="278" fill="none" stroke="#D6C4AE" stroke-width="1.5" rx="13" />
+
+  <!-- Divider Lines in Cosmic Latte Tone -->
+  <line x1="300" y1="30" x2="300" y2="250" stroke="#D6C4AE" stroke-width="1.2" />
+  <line x1="600" y1="30" x2="600" y2="250" stroke="#D6C4AE" stroke-width="1.2" />
+  <line x1="900" y1="30" x2="900" y2="250" stroke="#D6C4AE" stroke-width="1.2" />
+
+  <!-- ==================== COLUMN 1 ==================== -->
+  <g transform="translate(45, 60)">
+    <!-- Number + Unit -->
+    <text x="0" y="80" fill="#241117" class="num" font-size="92" letter-spacing="-2">04</text>
+    <text x="122" y="24" fill="#722F37" class="mono" font-size="12" font-weight="700" letter-spacing="1">YEARS</text>
+    <!-- Description -->
+    <text x="0" y="132" fill="#241117" class="desc" font-weight="600">
+      Crafting responsive design systems
+    </text>
+    <text x="0" y="152" fill="#785A48" class="desc">
+      and production web applications.
+    </text>
+  </g>
+
+  <!-- ==================== COLUMN 2 ==================== -->
+  <g transform="translate(345, 60)">
+    <!-- Number + Unit -->
+    <text x="0" y="80" fill="#241117" class="num" font-size="92" letter-spacing="-2">25<tspan fill="#722F37">+</tspan></text>
+    <text x="145" y="24" fill="#722F37" class="mono" font-size="12" font-weight="700" letter-spacing="1">PROJECTS</text>
+    <!-- Description -->
+    <text x="0" y="132" fill="#241117" class="desc" font-weight="600">
+      Engineered across creative tooling,
+    </text>
+    <text x="0" y="152" fill="#785A48" class="desc">
+      SaaS dashboards &amp; 3D web apps.
+    </text>
+  </g>
+
+  <!-- ==================== COLUMN 3 ==================== -->
+  <g transform="translate(645, 60)">
+    <!-- Number + Unit -->
+    <text x="0" y="80" fill="#241117" class="num" font-size="92" letter-spacing="-2">100<tspan font-size="54" fill="#722F37">%</tspan></text>
+    <text x="180" y="24" fill="#722F37" class="mono" font-size="12" font-weight="700" letter-spacing="1">WCAG</text>
+    <!-- Description -->
+    <text x="0" y="132" fill="#241117" class="desc" font-weight="600">
+      Strict adherence to accessibility,
+    </text>
+    <text x="0" y="152" fill="#785A48" class="desc">
+      semantic HTML &amp; 60fps interaction.
+    </text>
+  </g>
+
+  <!-- ==================== COLUMN 4 (DEEP BURGUNDY BLOCK) ==================== -->
+  <!-- Card Background -->
+  <rect x="914" y="14" width="272" height="252" rx="10" fill="url(#burgundy-card-grad)" />
+
+  <!-- Animated Celestial Pulse Rings -->
+  <circle cx="950" cy="225" r="26" fill="none" stroke="#FAF6EE" stroke-width="1.5" class="pulse-ring-1" />
+  <circle cx="950" cy="225" r="16" fill="none" stroke="#FAF6EE" stroke-width="1.2" class="pulse-ring-2" />
+  <circle cx="950" cy="225" r="6" fill="#FAF6EE" />
+
+  <!-- Floating Star in Top Right of Card -->
+  <g class="star-float">
+    <text x="1140" y="50" fill="#FAF6EE" font-size="20" text-anchor="middle">✦</text>
+  </g>
+
+  <g transform="translate(940, 60)">
+    <!-- Number + Unit in Mocha Cream -->
+    <text x="0" y="80" fill="#FAF6EE" class="num" font-size="92" letter-spacing="-3">6k<tspan font-size="56" fill="#E8DCC6">+</tspan></text>
+    <text x="145" y="24" fill="#E8DCC6" class="mono" font-size="12" font-weight="700" letter-spacing="1">HOURS</text>
+    <!-- Description in Warm Light Contrast -->
+    <text x="0" y="132" fill="#FAF6EE" class="desc" font-weight="600">
+      Deep UX research, fluid prototyping,
+    </text>
+    <text x="0" y="152" fill="#E8DCC6" class="desc" font-weight="600">
+      and frontend interaction craft.
+    </text>
+  </g>
+</svg>
