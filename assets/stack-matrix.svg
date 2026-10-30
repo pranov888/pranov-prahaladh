@@ -42,7 +42,23 @@
         0% { opacity: 0.6; }
         100% { opacity: 1; }
       }
+
+      /* Living Synaptic Sparks */
+      .synapse-spark {
+        animation: sparkTwinkle 2s ease-in-out infinite alternate;
+      }
+      @keyframes sparkTwinkle {
+        0% { opacity: 0.35; }
+        100% { opacity: 1; }
+      }
     ]]></style>
+
+    <!-- Brain Centerpiece Card Background Gradient -->
+    <linearGradient id="brain-card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF9" />
+      <stop offset="50%" stop-color="#FBF4EA" />
+      <stop offset="100%" stop-color="#F5E8D6" />
+    </linearGradient>
   </defs>
 
   <!-- Container Base -->
@@ -53,7 +69,7 @@
   <g transform="translate(40, 42)">
     <circle cx="6" cy="6" r="5" fill="#722F37" />
     <text x="24" y="11" fill="#722F37" class="grotesk" font-size="14.5" font-weight="800" letter-spacing="1.5">CAPABILITIES &amp; TECHNICAL MATRIX // ALL STACKS</text>
-    <text x="800" y="11" fill="#886D5B" class="mono" font-size="12" font-weight="700" letter-spacing="1">08 CATEGORIES · 50+ TECHNOLOGIES</text>
+    <text x="800" y="11" fill="#886D5B" class="mono" font-size="12" font-weight="700" letter-spacing="1">01 BRAIN · 08 CATEGORIES · 50+ TECHNOLOGIES</text>
   </g>
 
   <line x1="40" y1="68" x2="1160" y2="68" stroke="#D6C4AE" stroke-width="1.2" />
@@ -140,7 +156,7 @@
           <path d="M 4 7 L 8 10 L 4 13" fill="none" stroke="#22EC4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
           <line x1="10" y1="13" x2="16" y2="13" stroke="#FAF6EE" stroke-width="1.6" stroke-linecap="round" />
         </g>
-        <text x="34" y="22" class="tag-text">Bash Shell &amp; CLI Scripting</text>
+        <text x="34" y="22" class="tag-text">Bash &amp; CLI Scripting</text>
       </g>
     </g>
   </g>
@@ -383,7 +399,83 @@
     </g>
   </g>
 
+
   <!-- ======================================================== -->
+  <!-- CENTERPIECE: PRIMARY SKILL // MY BRAIN (WETWARE v2.4)    -->
+  <!-- ======================================================== -->
+  <g transform="translate(180, 328)">
+    <!-- Master Pod Shell with Burgundy Trim -->
+    <rect width="840" height="84" rx="14" fill="url(#brain-card-grad)" stroke="#722F37" stroke-width="1.8" />
+    <rect x="3" y="3" width="834" height="78" rx="11" fill="none" stroke="#D6C4AE" stroke-width="0.8" opacity="0.6" />
+
+    <!-- Left: Brain Icon Pod -->
+    <g transform="translate(18, 16)">
+      <rect width="52" height="52" rx="10" fill="#722F37" />
+      <!-- Stylized Anatomical & Neural Brain Graphic -->
+      <g transform="translate(11, 10)">
+        <!-- Left Hemisphere -->
+        <path d="M 15 4 C 9 4 5 7 5 12 C 2 14 1 18 2 21 C 3 25 7 28 11 29 C 13 29.5 14.5 29.5 15 29.5 Z" fill="#FAF6EE" />
+        <!-- Right Hemisphere -->
+        <path d="M 15 4 C 21 4 25 7 25 12 C 28 14 29 18 28 21 C 27 25 23 28 19 29 C 17 29.5 15.5 29.5 15 29.5 Z" fill="#FAF6EE" opacity="0.95" />
+        <!-- Fissure -->
+        <line x1="15" y1="4" x2="15" y2="29.5" stroke="#722F37" stroke-width="1.2" />
+        <!-- Sulci / Lobe folds -->
+        <path d="M 8 12 Q 12 14 15 12" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        <path d="M 5 19 Q 10 20 15 18" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        <path d="M 9 25 Q 12 24 15 26" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        
+        <path d="M 22 12 Q 18 14 15 12" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        <path d="M 25 19 Q 20 20 15 18" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+        <path d="M 21 25 Q 18 24 15 26" fill="none" stroke="#722F37" stroke-width="1" opacity="0.7" />
+
+        <!-- Neural Synapse Sparks in Gold -->
+        <circle cx="11" cy="13" r="1.5" fill="#F7B93E" class="synapse-spark" />
+        <circle cx="19" cy="13" r="1.5" fill="#F7B93E" class="synapse-spark" />
+        <circle cx="8" cy="20" r="1.5" fill="#F7B93E" class="synapse-spark" />
+        <circle cx="22" cy="20" r="1.5" fill="#F7B93E" class="synapse-spark" />
+        <circle cx="15" cy="24" r="1.7" fill="#F7B93E" class="synapse-spark" />
+      </g>
+    </g>
+
+    <!-- Brain Title & Classification -->
+    <g transform="translate(82, 20)">
+      <text x="0" y="10" fill="#722F37" font-family="'Space Mono', monospace" font-size="10" font-weight="700" letter-spacing="1.5">00 // MASTER PROCESSOR</text>
+      <text x="0" y="32" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="21" letter-spacing="-0.5">MY BRAIN</text>
+      <text x="0" y="48" fill="#886D5B" font-family="'Space Mono', monospace" font-size="9" font-weight="700">WETWARE v2.4 · 100% ORGANIC</text>
+    </g>
+
+    <!-- Subtle In-Card Divider -->
+    <line x1="286" y1="14" x2="286" y2="70" stroke="#D6C4AE" stroke-width="1.2" stroke-dasharray="2,2" />
+
+    <!-- Right: 4 Humorous Capability Chips in 2x2 Grid -->
+    <g transform="translate(300, 12)">
+      <!-- Chip 1: Coffee & Epiphanies -->
+      <g transform="translate(0, 0)">
+        <rect width="256" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
+        <text x="10" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11">☕ Chennai Filter Coffee &amp; 2 AM Epiphanies</text>
+      </g>
+
+      <!-- Chip 2: Shower Debugger -->
+      <g transform="translate(266, 0)">
+        <rect width="256" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
+        <text x="10" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11">🚿 Shower Debugging (99.8% accurate)</text>
+      </g>
+
+      <!-- Chip 3: Optical Radar -->
+      <g transform="translate(0, 32)">
+        <rect width="256" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
+        <text x="10" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11">🎯 Optical Radar: Spots 1px alignment flaws</text>
+      </g>
+
+      <!-- Chip 4: Translates Chaos into UI -->
+      <g transform="translate(266, 32)">
+        <rect width="256" height="28" rx="6" fill="#FAF6EE" stroke="#E2D4BF" stroke-width="1" />
+        <text x="10" y="18" fill="#1C0F14" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11">🧠 Turns Caffeine &amp; Chaos into Clean UI</text>
+      </g>
+    </g>
+  </g>
+
+    <!-- ======================================================== -->
   <!-- ROW 2 (y: 440 to 765)                                   -->
   <!-- ======================================================== -->
 
@@ -471,7 +563,7 @@
           <circle cx="10" cy="8" r="3.5" fill="#FFFFFF" />
           <path d="M 5 16 C 5 12 15 12 15 16 Z" fill="#FFFFFF" />
         </g>
-        <text x="34" y="22" class="tag-text">Postman &amp; Nginx Reverse Proxy</text>
+        <text x="34" y="22" class="tag-text">Postman &amp; Nginx Proxy</text>
       </g>
     </g>
   </g>
@@ -552,7 +644,7 @@
           <rect width="20" height="20" rx="3.5" fill="#362D59" />
           <path d="M 6 14 C 6 10 14 10 14 6 C 14 10 6 10 6 14 Z" fill="none" stroke="#FAF6EE" stroke-width="1.5" />
         </g>
-        <text x="34" y="22" class="tag-text">Sentry Error &amp; Performance Tracking</text>
+        <text x="34" y="22" class="tag-text">Sentry Error Tracking</text>
       </g>
     </g>
   </g>
