@@ -138,7 +138,7 @@
     <circle cx="6" cy="6" r="4.5" fill="#722F37" />
     <circle cx="6" cy="6" r="8" fill="none" stroke="#722F37" stroke-width="1" class="beacon-pulse" />
     <text x="24" y="10" fill="#722F37" class="mono" font-size="11" letter-spacing="1.5" font-weight="700">STATUS: DEBUG AT MIDNIGHT, SHIP BEFORE SUNRISE</text>
-    <text x="620" y="10" fill="#886D5B" class="mono" font-size="11" letter-spacing="1.2">PRANOVDESIGN.VERCEL.APP</text>
+    <text x="600" y="10" fill="#886D5B" class="mono" font-size="11" letter-spacing="1.5" font-weight="700">CORE DISCIPLINE: DESIGN + CODE</text>
     <text x="970" y="10" fill="#722F37" class="mono" font-size="11" letter-spacing="1.5" font-weight="700">CHENNAI, IN</text>
   </g>
 
