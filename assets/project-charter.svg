@@ -235,7 +235,7 @@
     <!-- Sheet Footer -->
     <g transform="translate(30, 405)">
       <text x="0" y="0" fill="#886D5B" class="mono" font-size="11" font-weight="700">v2.5 // Verified Profile Directive</text>
-      <text x="630" y="0" fill="#722F37" class="mono" font-size="11" font-weight="700" text-anchor="end">Pranov Prahaladh // SEALED</text>
+      <text x="600" y="0" fill="#722F37" class="mono" font-size="11" font-weight="700" text-anchor="end">Pranov Prahaladh // SEALED</text>
     </g>
   </g>
 </svg>
