@@ -21,6 +21,7 @@
 
     <style><![CDATA[
       @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
+      svg { pointer-events: none; user-select: none; }
 
       .mono { font-family: 'Space Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace; }
       .grotesk { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
