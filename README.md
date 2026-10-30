@@ -1,27 +1,27 @@
 <div align="center">
 
 <!-- ==================== HERO MASTHEAD ==================== -->
-<img src="./assets/hero-banner.svg" alt="Designer who Builds - Pranov Prahaladh" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/hero-banner.svg" alt="Designer who Builds - Pranov Prahaladh" width="100%" />
 
 <br/><br/>
 
 <!-- ==================== IMPACT METRICS STRIP ==================== -->
-<img src="./assets/metrics-strip.svg" alt="Impact Metrics &amp; Experience" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/metrics-strip.svg" alt="Impact Metrics &amp; Experience" width="100%" />
 
 <br/><br/>
 
 <!-- ==================== CORE PILLARS BENTO ==================== -->
-<img src="./assets/bento-pillars.svg" alt="001-004 Core Design &amp; Engineering Pillars" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/bento-pillars.svg" alt="001-004 Core Design &amp; Engineering Pillars" width="100%" />
 
 <br/><br/>
 
 <!-- ==================== PROJECT CHARTER ==================== -->
-<img src="./assets/project-charter.svg" alt="Project Charter &amp; Technical Execution" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/project-charter.svg" alt="Project Charter &amp; Technical Execution" width="100%" />
 
 <br/><br/>
 
 <!-- ==================== STACK MATRIX ==================== -->
-<img src="./assets/stack-matrix.svg" alt="Core Technologies &amp; Collaboration" width="100%" />
+<img src="https://raw.githubusercontent.com/pranov888/pranov888/main/assets/stack-matrix.svg" alt="Core Technologies &amp; Collaboration" width="100%" />
 
 <br/><br/>
 
