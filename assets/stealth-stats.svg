@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradient: Signature Light Mocha Cream -->
+    <linearGradient id="stealth-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F3EA" />
+      <stop offset="100%" stop-color="#EFE4D3" />
+    </linearGradient>
+
+    <!-- Card Sheet Surface Gradient -->
+    <linearGradient id="card-surface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F2" />
+      <stop offset="100%" stop-color="#F2E8DC" />
+    </linearGradient>
+
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
+
+      .mono { font-family: 'Space Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace; }
+      .grotesk { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .quote-font { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-style: italic; }
+
+      @keyframes pulseBeacon {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
+      .pulse-dot {
+        animation: pulseBeacon 2.2s infinite ease-in-out;
+      }
+
+      @keyframes glowBar {
+        0%, 100% { opacity: 0.95; }
+        50% { opacity: 1; }
+      }
+      .bar-fill {
+        animation: glowBar 3s ease-in-out infinite;
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Container Base & Cosmic Latte Border -->
+  <rect width="1200" height="660" rx="16" fill="url(#stealth-bg)" />
+  <rect x="1" y="1" width="1198" height="658" rx="15" fill="none" stroke="#D6C4AE" stroke-width="1.5" />
+
+  <!-- ==================== HEADER STRIP ==================== -->
+  <!-- Terminal Window Control Dots -->
+  <circle cx="48" cy="48" r="6" fill="#722F37" />
+  <circle cx="68" cy="48" r="6" fill="#A0505A" />
+  <circle cx="88" cy="48" r="6" fill="#D6C4AE" />
+
+  <!-- Section Title -->
+  <text x="114" y="53" fill="#722F37" class="mono" font-size="14.5" font-weight="700" letter-spacing="1.5">> GIT LOG --ONELINE --STATS // CLASSIFIED ACTIVITY</text>
+
+  <!-- Stealth Mode Badge Pill -->
+  <g transform="translate(920, 32)">
+    <rect width="240" height="32" rx="16" fill="#FAF7F2" stroke="#722F37" stroke-width="1.4" />
+    <circle cx="22" cy="16" r="4.5" fill="#722F37" class="pulse-dot" />
+    <text x="36" y="20" fill="#722F37" class="mono" font-size="11" font-weight="700" letter-spacing="0.8">STEALTH MODE // ENGAGED</text>
+  </g>
+
+  <!-- Header Divider Line -->
+  <line x1="40" y1="80" x2="1160" y2="80" stroke="#D6C4AE" stroke-width="1" />
+
+  <!-- ==================== STEALTH DIFF & CLASSIFIED QUOTE CARD ==================== -->
+  <g transform="translate(40, 100)">
+    <!-- Container Card -->
+    <rect width="1120" height="136" rx="10" fill="url(#card-surface)" stroke="#C7B49D" stroke-width="1.2" />
+
+    <!-- Terminal Sub-Header -->
+    <rect width="1120" height="32" rx="10" fill="#EFE3D3" />
+    <rect y="22" width="1120" height="10" fill="#EFE3D3" />
+    <line x1="0" y1="32" x2="1120" y2="32" stroke="#D6C4AE" stroke-width="1" />
+    <text x="24" y="21" fill="#886D5B" class="mono" font-size="11" font-weight="700" letter-spacing="0.8">TERMINAL // COMMIT_VERIFICATION.LOG</text>
+    <text x="1096" y="21" text-anchor="end" fill="#722F37" class="mono" font-size="10.5" font-weight="700">PRANOV888 // PRIVATE ENGINE</text>
+
+    <!-- Red Diff Line -->
+    <rect x="24" y="44" width="1072" height="26" rx="5" fill="#FCE8E6" stroke="#F5C2C7" stroke-width="0.8" />
+    <text x="40" y="61" fill="#A81D24" class="mono" font-size="13" font-weight="700">- Contribution graph may appear suspiciously empty.</text>
+
+    <!-- Green Diff Line -->
+    <rect x="24" y="75" width="1072" height="26" rx="5" fill="#E6F4EA" stroke="#B7E1CD" stroke-width="0.8" />
+    <text x="40" y="92" fill="#137333" class="mono" font-size="13" font-weight="700">+ Not a bug. I work in private client repositories and enterprise systems.</text>
+
+    <!-- Editorial Accent Line & Classified Quote -->
+    <line x1="24" y1="112" x2="24" y2="128" stroke="#722F37" stroke-width="3" stroke-linecap="round" />
+    <text x="36" y="123" fill="#4A252D" class="quote-font" font-size="14" font-weight="700">“Sorry, you can't see my contributions. My commits are classified. Think of it as stealth mode.”</text>
+  </g>
+
+  <!-- ==================== DUAL BENTO STATS CARDS ==================== -->
+
+  <!-- Panel 1: Activity & Contribution Metrics (Left) -->
+  <g transform="translate(40, 256)">
+    <!-- Surface Card -->
+    <rect width="545" height="240" rx="10" fill="url(#card-surface)" stroke="#C7B49D" stroke-width="1.2" />
+
+    <!-- Card Header -->
+    <text x="24" y="29" fill="#722F37" class="mono" font-size="12" font-weight="700" letter-spacing="1">01 // REPOSITORY &amp; COMMIT METRICS</text>
+    <line x1="24" y1="41" x2="521" y2="41" stroke="#D6C4AE" stroke-width="1" />
+
+    <!-- Metric Tile 1: Commits -->
+    <g transform="translate(24, 54)">
+      <rect width="238" height="78" rx="8" fill="#FAF7F2" stroke="#D8C7B2" stroke-width="1" />
+      <text x="18" y="38" fill="#722F37" class="grotesk" font-size="30" font-weight="800">1,420+</text>
+      <text x="18" y="60" fill="#886D5B" class="mono" font-size="10.5" font-weight="700">COMMITS (PRIVATE / CLIENT)</text>
+    </g>
+
+    <!-- Metric Tile 2: PRs Merged -->
+    <g transform="translate(283, 54)">
+      <rect width="238" height="78" rx="8" fill="#FAF7F2" stroke="#D8C7B2" stroke-width="1" />
+      <text x="18" y="38" fill="#722F37" class="grotesk" font-size="30" font-weight="800">85+</text>
+      <text x="18" y="60" fill="#886D5B" class="mono" font-size="10.5" font-weight="700">PULL REQUESTS MERGED</text>
+    </g>
+
+    <!-- Metric Tile 3: Consistency -->
+    <g transform="translate(24, 144)">
+      <rect width="238" height="78" rx="8" fill="#FAF7F2" stroke="#D8C7B2" stroke-width="1" />
+      <text x="18" y="38" fill="#722F37" class="grotesk" font-size="30" font-weight="800">99.8%</text>
+      <text x="18" y="60" fill="#886D5B" class="mono" font-size="10.5" font-weight="700">COMMIT CONSISTENCY</text>
+    </g>
+
+    <!-- Metric Tile 4: Grade -->
+    <g transform="translate(283, 144)">
+      <rect width="238" height="78" rx="8" fill="#FAF7F2" stroke="#D8C7B2" stroke-width="1" />
+      <text x="18" y="38" fill="#722F37" class="grotesk" font-size="30" font-weight="800">A+</text>
+      <text x="18" y="60" fill="#886D5B" class="mono" font-size="10.5" font-weight="700">CODE QUALITY &amp; QA GRADE</text>
+    </g>
+  </g>
+
+  <!-- Panel 2: Top Languages & Engine Share (Right) -->
+  <g transform="translate(615, 256)">
+    <!-- Surface Card -->
+    <rect width="545" height="240" rx="10" fill="url(#card-surface)" stroke="#C7B49D" stroke-width="1.2" />
+
+    <!-- Card Header -->
+    <text x="24" y="29" fill="#722F37" class="mono" font-size="12" font-weight="700" letter-spacing="1">02 // TOP LANGUAGES &amp; ENGINE SHARE</text>
+    <line x1="24" y1="41" x2="521" y2="41" stroke="#D6C4AE" stroke-width="1" />
+
+    <!-- Language Row 1: TypeScript (42%) -->
+    <g transform="translate(24, 56)">
+      <circle cx="8" cy="11" r="5" fill="#722F37" />
+      <text x="22" y="15" fill="#241117" class="grotesk" font-size="15" font-weight="700">TypeScript</text>
+      <text x="495" y="15" text-anchor="end" fill="#722F37" class="mono" font-size="13" font-weight="700">42%</text>
+      <rect x="0" y="24" width="495" height="8" rx="4" fill="#E8DBC9" />
+      <rect x="0" y="24" width="208" height="8" rx="4" fill="#722F37" class="bar-fill" />
+    </g>
+
+    <!-- Language Row 2: JavaScript (28%) -->
+    <g transform="translate(24, 100)">
+      <circle cx="8" cy="11" r="5" fill="#8A3B45" />
+      <text x="22" y="15" fill="#241117" class="grotesk" font-size="15" font-weight="700">JavaScript</text>
+      <text x="495" y="15" text-anchor="end" fill="#8A3B45" class="mono" font-size="13" font-weight="700">28%</text>
+      <rect x="0" y="24" width="495" height="8" rx="4" fill="#E8DBC9" />
+      <rect x="0" y="24" width="138" height="8" rx="4" fill="#8A3B45" class="bar-fill" />
+    </g>
+
+    <!-- Language Row 3: Python (18%) -->
+    <g transform="translate(24, 144)">
+      <circle cx="8" cy="11" r="5" fill="#4A252D" />
+      <text x="22" y="15" fill="#241117" class="grotesk" font-size="15" font-weight="700">Python</text>
+      <text x="495" y="15" text-anchor="end" fill="#4A252D" class="mono" font-size="13" font-weight="700">18%</text>
+      <rect x="0" y="24" width="495" height="8" rx="4" fill="#E8DBC9" />
+      <rect x="0" y="24" width="89" height="8" rx="4" fill="#4A252D" class="bar-fill" />
+    </g>
+
+    <!-- Language Row 4: UI & Design Systems (12%) -->
+    <g transform="translate(24, 188)">
+      <circle cx="8" cy="11" r="5" fill="#785A48" />
+      <text x="22" y="15" fill="#241117" class="grotesk" font-size="15" font-weight="700">UI &amp; Design Systems</text>
+      <text x="495" y="15" text-anchor="end" fill="#785A48" class="mono" font-size="13" font-weight="700">12%</text>
+      <rect x="0" y="24" width="495" height="8" rx="4" fill="#E8DBC9" />
+      <rect x="0" y="24" width="59" height="8" rx="4" fill="#785A48" class="bar-fill" />
+    </g>
+  </g>
+
+  <!-- ==================== STREAK & CRAFT MOMENTUM STRIP ==================== -->
+  <g transform="translate(40, 516)">
+    <!-- Container Sheet -->
+    <rect width="1120" height="114" rx="10" fill="url(#card-surface)" stroke="#C7B49D" stroke-width="1.2" />
+
+    <!-- Column 1: Total Contributions -->
+    <g transform="translate(180, 0)">
+      <text x="0" y="44" text-anchor="middle" fill="#722F37" class="grotesk" font-size="34" font-weight="800">1,420+</text>
+      <text x="0" y="68" text-anchor="middle" fill="#886D5B" class="mono" font-size="11" font-weight="700">TOTAL CONTRIBUTIONS</text>
+      <text x="0" y="88" text-anchor="middle" fill="#A08C7D" class="mono" font-size="10.5">AUG 2023 — PRESENT</text>
+    </g>
+
+    <!-- Divider 1 -->
+    <line x1="373" y1="20" x2="373" y2="94" stroke="#D6C4AE" stroke-width="1" />
+
+    <!-- Column 2: Current Momentum Flow (Flame Emblem) -->
+    <g transform="translate(560, 0)">
+      <!-- Flame Icon: Outer + Inner Core -->
+      <path d="M 0 8 C -4 14 -6 18 -6 22 A 6 6 0 0 0 6 22 C 6 18 4 14 0 8 Z" fill="#722F37" />
+      <path d="M 0 15 C -2 18 -2.5 19.5 -2.5 22 A 2.5 2.5 0 0 0 2.5 22 C 2.5 19.5 2 18 0 15 Z" fill="#FAF7F2" />
+      <text x="0" y="56" text-anchor="middle" fill="#722F37" class="grotesk" font-size="28" font-weight="800">CONTINUOUS</text>
+      <text x="0" y="78" text-anchor="middle" fill="#886D5B" class="mono" font-size="11" font-weight="700">CURRENT SPRINT FLOW</text>
+      <text x="0" y="96" text-anchor="middle" fill="#A08C7D" class="mono" font-size="10.5">ACTIVE STEALTH DISCIPLINE</text>
+    </g>
+
+    <!-- Divider 2 -->
+    <line x1="746" y1="20" x2="746" y2="94" stroke="#D6C4AE" stroke-width="1" />
+
+    <!-- Column 3: Longest Discipline Streak -->
+    <g transform="translate(930, 0)">
+      <text x="0" y="44" text-anchor="middle" fill="#722F37" class="grotesk" font-size="34" font-weight="800">365+ DAYS</text>
+      <text x="0" y="68" text-anchor="middle" fill="#886D5B" class="mono" font-size="11" font-weight="700">DISCIPLINE STREAK</text>
+      <text x="0" y="88" text-anchor="middle" fill="#A08C7D" class="mono" font-size="10.5">6,000+ HOURS IN THE CRAFT</text>
+    </g>
+  </g>
+</svg>
