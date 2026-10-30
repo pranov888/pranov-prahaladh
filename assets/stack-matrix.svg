@@ -1,21 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="100%" height="auto">
   <defs>
-    <!-- Background Gradient: Light Mocha Cream -->
+    <!-- Background Gradient: Light Mocha Cream (Image 2) -->
     <linearGradient id="matrix-light-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#F7F2E8" />
-      <stop offset="100%" stop-color="#EFE4D3" />
+      <stop offset="50%" stop-color="#F0E5D4" />
+      <stop offset="100%" stop-color="#F7F2E8" />
+    </linearGradient>
+
+    <!-- Pill Tag Background Gradient -->
+    <linearGradient id="tag-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F2" />
+      <stop offset="100%" stop-color="#F3E9DA" />
     </linearGradient>
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap');
 
       .mono { font-family: 'Space Mono', monospace; }
-      .grotesk { font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
+      .grotesk { font-family: 'Space Grotesk', -apple-system, sans-serif; font-weight: 700; }
+      .tag-text { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 11.5px; font-weight: 600; fill: #241117; }
 
       /* Floating Rotating Plus Anchor */
       .plus-spin {
         animation: spinPlus 10s linear infinite;
-        transform-origin: 24px 180px;
+        transform-origin: 50px 730px;
       }
       @keyframes spinPlus {
         from { transform: rotate(0deg); }
@@ -25,7 +33,7 @@
       /* Pulsing Star on Pill Button */
       .pill-star {
         animation: starBlink 2.5s ease-in-out infinite alternate;
-        transform-origin: 1018px 260px;
+        transform-origin: 1120px 730px;
       }
       @keyframes starBlink {
         0% { transform: scale(0.8) rotate(0deg); opacity: 0.6; }
@@ -40,107 +48,497 @@
         0% { stroke: #722F37; stroke-width: 1.5; }
         100% { stroke: #B7A89A; stroke-width: 2.2; }
       }
+
+      /* Tag hover effect */
+      .skill-tag {
+        transition: transform 0.2s ease;
+      }
+      .skill-tag:hover {
+        transform: translateY(-1px);
+      }
     </style>
   </defs>
 
   <!-- Container Base -->
-  <rect width="1200" height="360" fill="url(#matrix-light-bg)" rx="14" />
-  <rect x="1" y="1" width="1198" height="358" fill="none" stroke="#D6C4AE" stroke-width="1.5" rx="13" />
+  <rect width="1200" height="780" fill="url(#matrix-light-bg)" rx="16" />
+  <rect x="1" y="1" width="1198" height="778" fill="none" stroke="#D6C4AE" stroke-width="1.5" rx="15" />
 
-  <!-- Grid Dividers in Cosmic Latte Tone (5 columns, 2 rows) -->
-  <!-- Horizontal Line -->
-  <line x1="40" y1="180" x2="1160" y2="180" stroke="#D6C4AE" stroke-width="1.2" />
-
-  <!-- Vertical Lines -->
-  <line x1="264" y1="20" x2="264" y2="340" stroke="#D6C4AE" stroke-width="1.2" />
-  <line x1="488" y1="20" x2="488" y2="340" stroke="#D6C4AE" stroke-width="1.2" />
-  <line x1="712" y1="20" x2="712" y2="340" stroke="#D6C4AE" stroke-width="1.2" />
-  <line x1="936" y1="20" x2="936" y2="340" stroke="#D6C4AE" stroke-width="1.2" />
-
-  <!-- ==================== ROW 1 (Pranov's Interfaces & Languages) ==================== -->
-  <!-- Cell 1: Next.js -->
-  <g transform="translate(152, 100)" text-anchor="middle">
-    <circle cx="0" cy="-22" r="16" fill="none" stroke="#241117" stroke-width="1.6" />
-    <path d="M -5 -12 L 6 -32 M 5 -12 L 5 -26" stroke="#241117" stroke-width="1.6" />
-    <text x="0" y="22" fill="#241117" class="grotesk" font-size="16">Next.js</text>
-    <text x="0" y="38" fill="#785A48" class="mono" font-size="10">APP ROUTER / SSR</text>
+  <!-- ==================== HEADER STRIP ==================== -->
+  <g transform="translate(40, 42)">
+    <circle cx="6" cy="6" r="4" fill="#722F37" />
+    <text x="22" y="10" fill="#722F37" class="mono" font-size="12" font-weight="700" letter-spacing="1.5">CAPABILITIES &amp; TECHNICAL MATRIX // ALL STACKS</text>
+    <text x="820" y="10" fill="#886D5B" class="mono" font-size="11" letter-spacing="1">08 CATEGORIES · 50+ TECHNOLOGIES</text>
   </g>
 
-  <!-- Cell 2: React & React Native -->
-  <g transform="translate(376, 100)" text-anchor="middle">
-    <ellipse cx="0" cy="-22" rx="18" ry="7" fill="none" stroke="#241117" stroke-width="1.4" />
-    <ellipse cx="0" cy="-22" rx="18" ry="7" fill="none" stroke="#241117" stroke-width="1.4" transform="rotate(60, 0, -22)" />
-    <ellipse cx="0" cy="-22" rx="18" ry="7" fill="none" stroke="#241117" stroke-width="1.4" transform="rotate(120, 0, -22)" />
-    <circle cx="0" cy="-22" r="3" fill="#722F37" />
-    <text x="0" y="22" fill="#241117" class="grotesk" font-size="16">React &amp; Native</text>
-    <text x="0" y="38" fill="#785A48" class="mono" font-size="10">EXPO / WEB APPS</text>
+  <line x1="40" y1="65" x2="1160" y2="65" stroke="#D6C4AE" stroke-width="1.2" />
+
+  <!-- Architectural Grid Dividers -->
+  <!-- Horizontal Center Line between Row 1 and Row 2 -->
+  <line x1="40" y1="380" x2="1160" y2="380" stroke="#D6C4AE" stroke-width="1.2" />
+  <!-- Horizontal Footer Line -->
+  <line x1="40" y1="695" x2="1160" y2="695" stroke="#D6C4AE" stroke-width="1.2" />
+
+  <!-- Vertical Divider Lines (4 Columns) -->
+  <line x1="320" y1="65" x2="320" y2="695" stroke="#D6C4AE" stroke-width="1.2" />
+  <line x1="600" y1="65" x2="600" y2="695" stroke="#D6C4AE" stroke-width="1.2" />
+  <line x1="880" y1="65" x2="880" y2="695" stroke="#D6C4AE" stroke-width="1.2" />
+
+  <!-- ======================================================== -->
+  <!-- ROW 1 (y: 85 to 370)                                    -->
+  <!-- ======================================================== -->
+
+  <!-- CELL 01: LANGUAGES -->
+  <g transform="translate(60, 95)">
+    <text x="0" y="18" fill="#722F37" class="mono" font-size="13" font-weight="700">01 // LANGUAGES</text>
+    <text x="0" y="36" fill="#886D5B" class="mono" font-size="9.5">CORE RUNTIMES &amp; SCRIPTS</text>
+    <line x1="0" y1="46" x2="230" y2="46" stroke="#E2D4BF" stroke-width="1" />
+
+    <!-- Tags -->
+    <g transform="translate(0, 60)">
+      <!-- TypeScript -->
+      <g transform="translate(0, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">TypeScript</text>
+      </g>
+      <!-- JavaScript -->
+      <g transform="translate(125, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">JavaScript</text>
+      </g>
+
+      <!-- Python -->
+      <g transform="translate(0, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Python</text>
+      </g>
+      <!-- SQL -->
+      <g transform="translate(125, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">SQL</text>
+      </g>
+
+      <!-- Bash -->
+      <g transform="translate(0, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Bash Shell</text>
+      </g>
+    </g>
   </g>
 
-  <!-- Cell 3: TypeScript -->
-  <g transform="translate(600, 100)" text-anchor="middle">
-    <rect x="-14" y="-36" width="28" height="28" rx="4" fill="none" stroke="#241117" stroke-width="1.6" />
-    <text x="0" y="-17" fill="#241117" class="mono" font-size="12" font-weight="700">TS</text>
-    <text x="0" y="22" fill="#241117" class="grotesk" font-size="16">TypeScript</text>
-    <text x="0" y="38" fill="#785A48" class="mono" font-size="10">STRICT TYPING</text>
+  <!-- CELL 02: INTERFACES -->
+  <g transform="translate(340, 95)">
+    <text x="0" y="18" fill="#722F37" class="mono" font-size="13" font-weight="700">02 // INTERFACES</text>
+    <text x="0" y="36" fill="#886D5B" class="mono" font-size="9.5">FRONTEND &amp; MOTION</text>
+    <line x1="0" y1="46" x2="230" y2="46" stroke="#E2D4BF" stroke-width="1" />
+
+    <!-- Tags -->
+    <g transform="translate(0, 60)">
+      <!-- React -->
+      <g transform="translate(0, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">React 19</text>
+      </g>
+      <!-- Next.js -->
+      <g transform="translate(125, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Next.js 15</text>
+      </g>
+
+      <!-- React Native -->
+      <g transform="translate(0, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">React Native</text>
+      </g>
+      <!-- TanStack -->
+      <g transform="translate(125, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">TanStack</text>
+      </g>
+
+      <!-- Electron -->
+      <g transform="translate(0, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Electron</text>
+      </g>
+      <!-- Tailwind -->
+      <g transform="translate(125, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Tailwind CSS</text>
+      </g>
+
+      <!-- GSAP -->
+      <g transform="translate(0, 108)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">GSAP Physics</text>
+      </g>
+      <!-- Three.js -->
+      <g transform="translate(125, 108)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Three.js / 3D</text>
+      </g>
+    </g>
   </g>
 
-  <!-- Cell 4: Tailwind CSS -->
-  <g transform="translate(824, 100)" text-anchor="middle">
-    <path d="M -16 -24 Q -8 -34 0 -24 Q 8 -14 16 -24 Q 8 -10 0 -20 Q -8 -30 -16 -20" fill="none" stroke="#241117" stroke-width="1.6" />
-    <text x="0" y="22" fill="#241117" class="grotesk" font-size="16">Tailwind CSS</text>
-    <text x="0" y="38" fill="#785A48" class="mono" font-size="10">DESIGN TOKENS</text>
+  <!-- CELL 03: SERVICES -->
+  <g transform="translate(620, 95)">
+    <text x="0" y="18" fill="#722F37" class="mono" font-size="13" font-weight="700">03 // SERVICES</text>
+    <text x="0" y="36" fill="#886D5B" class="mono" font-size="9.5">BACKEND &amp; NETWORKING</text>
+    <line x1="0" y1="46" x2="230" y2="46" stroke="#E2D4BF" stroke-width="1" />
+
+    <!-- Tags -->
+    <g transform="translate(0, 60)">
+      <!-- Node.js -->
+      <g transform="translate(0, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Node.js</text>
+      </g>
+      <!-- Django REST -->
+      <g transform="translate(125, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Django REST</text>
+      </g>
+
+      <!-- Express -->
+      <g transform="translate(0, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Express</text>
+      </g>
+      <!-- FastAPI -->
+      <g transform="translate(125, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">FastAPI</text>
+      </g>
+
+      <!-- Celery -->
+      <g transform="translate(0, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Celery</text>
+      </g>
+      <!-- Socket.IO -->
+      <g transform="translate(125, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Socket.IO</text>
+      </g>
+
+      <!-- REST & Webhooks -->
+      <g transform="translate(0, 108)">
+        <rect width="240" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">REST APIs &amp; Webhooks</text>
+      </g>
+    </g>
   </g>
 
-  <!-- Cell 5: Three.js & GSAP -->
-  <g transform="translate(1048, 100)" text-anchor="middle">
-    <polygon points="0,-36 15,-10 -15,-10" fill="none" stroke="#241117" stroke-width="1.6" />
-    <circle cx="0" cy="-20" r="3" fill="#722F37" />
-    <text x="0" y="22" fill="#241117" class="grotesk" font-size="16">Three.js &amp; GSAP</text>
-    <text x="0" y="38" fill="#785A48" class="mono" font-size="10">MOTION DESIGN</text>
+  <!-- CELL 04: DATA & STORAGE -->
+  <g transform="translate(900, 95)">
+    <text x="0" y="18" fill="#722F37" class="mono" font-size="13" font-weight="700">04 // DATA &amp; STORAGE</text>
+    <text x="0" y="36" fill="#886D5B" class="mono" font-size="9.5">DATABASES &amp; CACHES</text>
+    <line x1="0" y1="46" x2="250" y2="46" stroke="#E2D4BF" stroke-width="1" />
+
+    <!-- Tags -->
+    <g transform="translate(0, 60)">
+      <!-- PostgreSQL -->
+      <g transform="translate(0, 0)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">PostgreSQL</text>
+      </g>
+      <!-- Supabase -->
+      <g transform="translate(130, 0)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Supabase</text>
+      </g>
+
+      <!-- Firebase -->
+      <g transform="translate(0, 36)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Firebase</text>
+      </g>
+      <!-- Redis -->
+      <g transform="translate(130, 36)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Redis</text>
+      </g>
+
+      <!-- SQLite -->
+      <g transform="translate(0, 72)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">SQLite</text>
+      </g>
+      <!-- MongoDB -->
+      <g transform="translate(130, 72)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">MongoDB</text>
+      </g>
+    </g>
   </g>
 
-  <!-- ==================== ROW 2 (Pranov's Services & Design) ==================== -->
-  <!-- Cell 6: Python & FastAPI -->
-  <g transform="translate(152, 260)" text-anchor="middle">
-    <path d="M -12 -30 C -12 -36 0 -36 0 -30 L 0 -22 L -8 -22" fill="none" stroke="#241117" stroke-width="1.5" />
-    <path d="M 12 -14 C 12 -8 0 -8 0 -14 L 0 -22 L 8 -22" fill="none" stroke="#241117" stroke-width="1.5" />
-    <circle cx="-6" cy="-30" r="1.5" fill="#722F37" />
-    <circle cx="6" cy="-14" r="1.5" fill="#722F37" />
-    <text x="0" y="22" fill="#241117" class="grotesk" font-size="16">Python &amp; APIs</text>
-    <text x="0" y="38" fill="#785A48" class="mono" font-size="10">FASTAPI / DJANGO</text>
+  <!-- ======================================================== -->
+  <!-- ROW 2 (y: 400 to 680)                                   -->
+  <!-- ======================================================== -->
+
+  <!-- CELL 05: INFRASTRUCTURE -->
+  <g transform="translate(60, 410)">
+    <text x="0" y="18" fill="#722F37" class="mono" font-size="13" font-weight="700">05 // INFRASTRUCTURE</text>
+    <text x="0" y="36" fill="#886D5B" class="mono" font-size="9.5">DEVOPS &amp; DEPLOYMENT</text>
+    <line x1="0" y1="46" x2="230" y2="46" stroke="#E2D4BF" stroke-width="1" />
+
+    <!-- Tags -->
+    <g transform="translate(0, 60)">
+      <!-- Docker -->
+      <g transform="translate(0, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Docker</text>
+      </g>
+      <!-- Git & Actions -->
+      <g transform="translate(125, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Git &amp; CI/CD</text>
+      </g>
+
+      <!-- Linux -->
+      <g transform="translate(0, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Linux OS</text>
+      </g>
+      <!-- Vercel -->
+      <g transform="translate(125, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Vercel</text>
+      </g>
+
+      <!-- Railway -->
+      <g transform="translate(0, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Railway</text>
+      </g>
+      <!-- Cloudflare -->
+      <g transform="translate(125, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Cloudflare</text>
+      </g>
+
+      <!-- Postman & Nginx -->
+      <g transform="translate(0, 108)">
+        <rect width="240" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Postman &amp; Nginx</text>
+      </g>
+    </g>
   </g>
 
-  <!-- Cell 7: Figma Master -->
-  <g transform="translate(376, 260)" text-anchor="middle">
-    <circle cx="-6" cy="-30" r="5" fill="none" stroke="#241117" stroke-width="1.4" />
-    <circle cx="6" cy="-30" r="5" fill="none" stroke="#241117" stroke-width="1.4" />
-    <circle cx="-6" cy="-20" r="5" fill="none" stroke="#241117" stroke-width="1.4" />
-    <circle cx="6" cy="-20" r="5" fill="none" stroke="#241117" stroke-width="1.4" />
-    <circle cx="-6" cy="-10" r="5" fill="none" stroke="#241117" stroke-width="1.4" />
-    <text x="0" y="22" fill="#241117" class="grotesk" font-size="16">Figma &amp; Framer</text>
-    <text x="0" y="38" fill="#785A48" class="mono" font-size="10">UI/UX &amp; TOKENS</text>
+  <!-- CELL 06: QUALITY & DX -->
+  <g transform="translate(340, 410)">
+    <text x="0" y="18" fill="#722F37" class="mono" font-size="13" font-weight="700">06 // QUALITY &amp; DX</text>
+    <text x="0" y="36" fill="#886D5B" class="mono" font-size="9.5">TESTING &amp; OBSERVABILITY</text>
+    <line x1="0" y1="46" x2="230" y2="46" stroke="#E2D4BF" stroke-width="1" />
+
+    <!-- Tags -->
+    <g transform="translate(0, 60)">
+      <!-- Jest -->
+      <g transform="translate(0, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Jest</text>
+      </g>
+      <!-- Playwright -->
+      <g transform="translate(125, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Playwright</text>
+      </g>
+
+      <!-- Vitest -->
+      <g transform="translate(0, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Vitest</text>
+      </g>
+      <!-- Storybook -->
+      <g transform="translate(125, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Storybook</text>
+      </g>
+
+      <!-- ESLint & Prettier -->
+      <g transform="translate(0, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">ESLint</text>
+      </g>
+      <g transform="translate(125, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Prettier</text>
+      </g>
+
+      <!-- Sentry -->
+      <g transform="translate(0, 108)">
+        <rect width="240" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Sentry Observability</text>
+      </g>
+    </g>
   </g>
 
-  <!-- Cell 8: PostgreSQL & Supabase -->
-  <g transform="translate(600, 260)" text-anchor="middle">
-    <ellipse cx="0" cy="-30" rx="14" ry="5" fill="none" stroke="#241117" stroke-width="1.5" />
-    <path d="M -14 -30 L -14 -16 A 14 5 0 0 0 14 -16 L 14 -30" fill="none" stroke="#241117" stroke-width="1.5" />
-    <circle cx="0" cy="-20" r="2" fill="#722F37" />
-    <text x="0" y="22" fill="#241117" class="grotesk" font-size="16">Postgres &amp; DB</text>
-    <text x="0" y="38" fill="#785A48" class="mono" font-size="10">SUPABASE / REDIS</text>
+  <!-- CELL 07: PLUGS INTO -->
+  <g transform="translate(620, 410)">
+    <text x="0" y="18" fill="#722F37" class="mono" font-size="13" font-weight="700">07 // PLUGS INTO</text>
+    <text x="0" y="36" fill="#886D5B" class="mono" font-size="9.5">ECOSYSTEMS &amp; PAYMENTS</text>
+    <line x1="0" y1="46" x2="230" y2="46" stroke="#E2D4BF" stroke-width="1" />
+
+    <!-- Tags -->
+    <g transform="translate(0, 60)">
+      <!-- WhatsApp API -->
+      <g transform="translate(0, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">WhatsApp API</text>
+      </g>
+      <!-- Razorpay -->
+      <g transform="translate(125, 0)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Razorpay</text>
+      </g>
+
+      <!-- Stripe -->
+      <g transform="translate(0, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Stripe</text>
+      </g>
+      <!-- Google Workspace -->
+      <g transform="translate(125, 36)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">G-Workspace</text>
+      </g>
+
+      <!-- Slack -->
+      <g transform="translate(0, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Slack APIs</text>
+      </g>
+      <!-- Twilio -->
+      <g transform="translate(125, 72)">
+        <rect width="115" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Twilio</text>
+      </g>
+    </g>
   </g>
 
-  <!-- Cell 9 & 10 Interactive Pill Button with Pranov's Handle -->
-  <g transform="translate(936, 260)" text-anchor="middle">
-    <rect x="-120" y="-24" width="240" height="48" rx="24" fill="#FAF7F2" class="pill-border" />
-    <text x="-8" y="5" fill="#722F37" class="mono" font-size="12" font-weight="700">LET'S CONNECT</text>
-    <text x="82" y="5" fill="#722F37" class="mono pill-star" font-size="16">✦</text>
+  <!-- CELL 08: DESIGN & CREATIVE -->
+  <g transform="translate(900, 410)">
+    <text x="0" y="18" fill="#722F37" class="mono" font-size="13" font-weight="700">08 // DESIGN &amp; CREATIVE</text>
+    <text x="0" y="36" fill="#886D5B" class="mono" font-size="9.5">3D, MOTION &amp; BRANDING</text>
+    <line x1="0" y1="46" x2="250" y2="46" stroke="#E2D4BF" stroke-width="1" />
+
+    <!-- Tags -->
+    <g transform="translate(0, 60)">
+      <!-- Figma -->
+      <g transform="translate(0, 0)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Figma</text>
+      </g>
+      <!-- Framer -->
+      <g transform="translate(130, 0)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Framer</text>
+      </g>
+
+      <!-- Webflow -->
+      <g transform="translate(0, 36)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Webflow</text>
+      </g>
+      <!-- Blender -->
+      <g transform="translate(130, 36)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Blender 3D</text>
+      </g>
+
+      <!-- After Effects -->
+      <g transform="translate(0, 72)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">After Effects</text>
+      </g>
+      <!-- Illustrator -->
+      <g transform="translate(130, 72)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Illustrator</text>
+      </g>
+
+      <!-- Photoshop -->
+      <g transform="translate(0, 108)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Photoshop</text>
+      </g>
+      <!-- Premiere & InDesign -->
+      <g transform="translate(130, 108)">
+        <rect width="120" height="28" rx="6" fill="url(#tag-grad)" stroke="#D6C4AE" stroke-width="1" />
+        <circle cx="12" cy="14" r="3" fill="#722F37" />
+        <text x="24" y="18" class="tag-text">Premiere / InD</text>
+      </g>
+    </g>
   </g>
 
-  <!-- Floating Deep Burgundy Plus Button on Left Boundary -->
-  <g transform="translate(24, 180)" class="plus-spin">
+  <!-- ==================== FOOTER STRIP ==================== -->
+  <!-- Floating Rotating Plus Anchor on Left (Exact detail from reference image) -->
+  <g class="plus-spin" transform="translate(50, 735)">
     <circle cx="0" cy="0" r="18" fill="#FAF7F2" stroke="#722F37" stroke-width="1.8" />
     <line x1="-7" y1="0" x2="7" y2="0" stroke="#722F37" stroke-width="2.2" />
     <line x1="0" y1="-7" x2="0" y2="7" stroke="#722F37" stroke-width="2.2" />
+  </g>
+
+  <g transform="translate(90, 740)">
+    <text x="0" y="0" fill="#886D5B" class="mono" font-size="11" letter-spacing="1">DESIGNED WITH MATHEMATICAL PRECISION · CHENNAI, INDIA</text>
+  </g>
+
+  <!-- Interactive Pill Button on Right -->
+  <g transform="translate(1010, 735)" text-anchor="middle">
+    <rect x="-120" y="-22" width="240" height="44" rx="22" fill="#FAF7F2" class="pill-border" />
+    <text x="-8" y="5" fill="#722F37" class="mono" font-size="12" font-weight="700">LET'S CONNECT</text>
+    <text x="82" y="5" fill="#722F37" class="mono pill-star" font-size="16">✦</text>
   </g>
 </svg>
