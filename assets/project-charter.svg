@@ -30,23 +30,113 @@
         to { stroke-dashoffset: -28; }
       }
 
+
+      /* Laser Scanner Beam */
+      .laser-line {
+        animation: scanAnim 3.5s ease-in-out infinite alternate;
+      }
+      @keyframes scanAnim {
+        0% { transform: translateY(0px); opacity: 0.3; }
+        100% { transform: translateY(140px); opacity: 1; }
+      }
+
+      /* Data Conduit Flow */
+      .conduit-flow {
+        stroke-dasharray: 4 3;
+        animation: conduitAnim 1.2s linear infinite;
+      }
+      @keyframes conduitAnim {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: -14; }
+      }
     ]]></style>
+
+    <!-- Laser Beam Gradient -->
+    <linearGradient id="laser-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#722F37" stop-opacity="0" />
+      <stop offset="50%" stop-color="#722F37" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#722F37" stop-opacity="0" />
+    </linearGradient>
   </defs>
 
   <!-- Container Base -->
   <rect width="1200" height="520" fill="url(#charter-light-bg)" rx="16" />
   <rect x="1" y="1" width="1198" height="518" fill="none" stroke="#D6C4AE" stroke-width="1.5" rx="15" />
 
-  <!-- Animated Technical Pointer Curve in Deep Burgundy -->
-  <path d="M 740 180 Q 890 120 1040 260" fill="none" stroke="#722F37" stroke-width="2.2" class="curve-flow" />
-  
-  <!-- Destination Anchor Point -->
-  <circle cx="1040" cy="260" r="5" fill="#722F37" />
+  <!-- Data Conduit Bridge Linking Code Charter to Biometric Auth Card -->
+  <line x1="738" y1="253" x2="770" y2="253" stroke="#722F37" stroke-width="2" class="conduit-flow" />
+  <circle cx="738" cy="253" r="4" fill="#722F37" />
+  <circle cx="770" cy="253" r="4" fill="#722F37" />
 
-  <!-- Target Annotation Pill with Pranov's live status -->
-  <g transform="translate(930, 290)">
-    <rect width="220" height="42" rx="6" fill="#FAF7F2" stroke="#D6C4AE" stroke-width="1.4" />
-    <text x="18" y="25" fill="#722F37" class="mono" font-size="11" font-weight="700" letter-spacing="0.8">PRODUCTION DIRECTIVE ✦</text>
+  <!-- ==================== BIOMETRIC IDENTITY AUTH CARD ==================== -->
+  <!-- Layered Shadow Sheet (Back) -->
+  <rect x="778" y="46" width="350" height="430" rx="6" fill="#E4D5BF" stroke="#CBBBA4" stroke-width="1" />
+
+  <!-- Main Card Sheet (Front) -->
+  <g transform="translate(770, 38)">
+    <rect width="350" height="430" rx="6" fill="url(#sheet-light-grad)" stroke="#C7B49D" stroke-width="1.4" />
+    
+    <!-- Card Header -->
+    <text x="24" y="36" class="mono" font-size="11" font-weight="700" fill="#886D5B" letter-spacing="0.8">AUTH // BIOMETRIC VERIFICATION</text>
+    <text x="245" y="36" class="mono" font-size="11" font-weight="700" fill="#722F37">VERIFIED ✓</text>
+    <line x1="24" y1="52" x2="326" y2="52" stroke="#D6C4AE" stroke-width="1" />
+
+    <!-- Biometric Fingerprint Sensor Pad -->
+    <rect x="95" y="72" width="160" height="175" rx="14" fill="#FAF6EE" stroke="#D6C4AE" stroke-width="1.2" />
+    
+    <!-- Corner Technical Brackets on Sensor Pad -->
+    <path d="M 103 84 L 103 78 L 109 78" fill="none" stroke="#722F37" stroke-width="1.5" />
+    <path d="M 247 84 L 247 78 L 241 78" fill="none" stroke="#722F37" stroke-width="1.5" />
+    <path d="M 103 235 L 103 241 L 109 241" fill="none" stroke="#722F37" stroke-width="1.5" />
+    <path d="M 247 235 L 247 241 L 241 241" fill="none" stroke="#722F37" stroke-width="1.5" />
+
+    <!-- Fingerprint Whorls -->
+    <g>
+      <!-- Core Whorls -->
+      <path d="M 175 145 C 172 138 168 138 166 145 C 164 152 165 160 172 168 C 176 172 181 172 183 166 C 185 160 183 148 178 135 C 174 125 165 125 160 135 C 156 145 156 165 168 178 C 174 185 186 185 190 175 C 194 165 194 145 186 128 C 178 112 160 112 152 128 C 146 142 146 170 162 188 C 170 196 188 196 196 184 C 202 172 202 142 192 120 C 182 100 155 100 144 120 C 136 138 136 175 156 198 C 166 208 192 208 202 192 C 210 178 210 138 198 112 C 185 88 150 88 136 112 C 126 132 126 182 150 208 C 162 218 196 218 208 200" 
+            fill="none" stroke="#722F37" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+      
+      <!-- Outer Arches -->
+      <path d="M 130 130 C 122 148 122 178 138 202 C 144 212 156 220 170 224" 
+            fill="none" stroke="#722F37" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+      <path d="M 125 145 C 118 162 118 186 130 208 C 136 218 148 226 160 230" 
+            fill="none" stroke="#722F37" stroke-width="1.6" stroke-linecap="round" opacity="0.55" />
+      
+      <path d="M 205 125 C 215 142 216 170 206 194 C 200 206 188 216 175 222" 
+            fill="none" stroke="#722F37" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+      <path d="M 212 140 C 220 156 220 180 212 202 C 206 214 196 222 185 228" 
+            fill="none" stroke="#722F37" stroke-width="1.6" stroke-linecap="round" opacity="0.55" />
+      
+      <!-- Top Crest Loops -->
+      <path d="M 148 102 C 165 92 185 92 202 102" fill="none" stroke="#722F37" stroke-width="1.8" stroke-linecap="round" opacity="0.75" />
+      <path d="M 142 94 C 164 82 188 82 208 94" fill="none" stroke="#722F37" stroke-width="1.8" stroke-linecap="round" opacity="0.65" />
+      <path d="M 138 86 C 162 72 190 72 214 86" fill="none" stroke="#722F37" stroke-width="1.6" stroke-linecap="round" opacity="0.5" />
+    </g>
+
+    <!-- Laser Scanner Beam -->
+    <g class="laser-line">
+      <line x1="102" y1="90" x2="248" y2="90" stroke="url(#laser-grad)" stroke-width="2.2" />
+      <circle cx="175" cy="90" r="2.5" fill="#722F37" />
+    </g>
+
+    <!-- Sensor Sub-Badge -->
+    <text x="175" y="264" fill="#722F37" class="mono" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1">THUMBPRINT MATCHED · 100%</text>
+
+    <!-- Telemetry Data Block -->
+    <g transform="translate(25, 290)" class="mono" font-size="10" font-weight="700">
+      <text x="0" y="0" fill="#886D5B">IDENTITY : <tspan fill="#241117">PRANOV PRAHALADH</tspan></text>
+      <text x="0" y="18" fill="#886D5B">GEO      : <tspan fill="#722F37">13.0827° N, 80.2707° E</tspan></text>
+      <text x="0" y="36" fill="#886D5B">PROTOCOL : <tspan fill="#241117">UI/UX &amp; FRONTEND ARCH</tspan></text>
+      <text x="0" y="54" fill="#886D5B">KEY      : <tspan fill="#722F37">ED25519 · VERIFIED ✦</tspan></text>
+    </g>
+
+    <line x1="24" y1="365" x2="326" y2="365" stroke="#D6C4AE" stroke-width="1" />
+
+    <!-- Production Directive Action Capsule -->
+    <g transform="translate(25, 378)">
+      <rect width="300" height="36" rx="6" fill="#FAF6EE" stroke="#722F37" stroke-width="1.4" />
+      <text x="150" y="23" fill="#722F37" class="mono" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="0.8">PRODUCTION DIRECTIVE ✦ VERIFIED</text>
+    </g>
   </g>
 
   <!-- ==================== TECHNICAL DOCUMENT MEMO SHEET ==================== -->
