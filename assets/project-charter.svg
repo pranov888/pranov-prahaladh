@@ -125,7 +125,7 @@
     <!-- Telemetry Data Block -->
     <g transform="translate(25, 290)" class="mono" font-size="10" font-weight="700">
       <text x="0" y="0" fill="#886D5B">IDENTITY : <tspan fill="#241117">PRANOV PRAHALADH</tspan></text>
-      <text x="0" y="18" fill="#886D5B">GEO      : <tspan fill="#722F37">GLOBAL / REMOTE ASYNC</tspan></text>
+      <text x="0" y="18" fill="#886D5B">SPECIALTY: <tspan fill="#722F37">FULL-STACK &amp; UI SYSTEMS</tspan></text>
       <text x="0" y="36" fill="#886D5B">PROTOCOL : <tspan fill="#241117">UI/UX &amp; FRONTEND ARCH</tspan></text>
       <text x="0" y="54" fill="#886D5B">KEY      : <tspan fill="#722F37">ED25519 // VERIFIED</tspan></text>
     </g>
@@ -172,47 +172,39 @@
       </text>
 
       <!-- Line 2: role -->
-      <text x="0" y="27">
+      <text x="0" y="30">
         <tspan fill="#8C3B45" font-weight="700">  role      </tspan>
         <tspan fill="#722F37" font-weight="700">: </tspan>
         <tspan fill="#241117" font-weight="700">"UI/UX Designer &amp; Frontend Developer"</tspan>
         <tspan fill="#722F37" font-weight="700">,</tspan>
       </text>
 
-      <!-- Line 3: workspace -->
-      <text x="0" y="54">
-        <tspan fill="#8C3B45" font-weight="700">  workspace </tspan>
-        <tspan fill="#722F37" font-weight="700">: </tspan>
-        <tspan fill="#241117" font-weight="700">"Global / Remote"</tspan>
-        <tspan fill="#722F37" font-weight="700">,</tspan>
-      </text>
-
-      <!-- Line 4: portfolio -->
-      <text x="0" y="81">
+      <!-- Line 3: portfolio -->
+      <text x="0" y="60">
         <tspan fill="#8C3B45" font-weight="700">  portfolio </tspan>
         <tspan fill="#722F37" font-weight="700">: </tspan>
         <tspan fill="#241117" font-weight="700">"pranovdesign"</tspan>
         <tspan fill="#722F37" font-weight="700">,</tspan>
       </text>
 
-      <!-- Line 5: philosophy -->
-      <text x="0" y="108">
+      <!-- Line 4: philosophy -->
+      <text x="0" y="90">
         <tspan fill="#8C3B45" font-weight="700">  philosophy</tspan>
         <tspan fill="#722F37" font-weight="700">: </tspan>
         <tspan fill="#241117" font-weight="700">"Design is not how it looks. It's how it works."</tspan>
         <tspan fill="#722F37" font-weight="700">,</tspan>
       </text>
 
-      <!-- Line 6: currently -->
-      <text x="0" y="135">
+      <!-- Line 5: currently -->
+      <text x="0" y="120">
         <tspan fill="#8C3B45" font-weight="700">  currently </tspan>
         <tspan fill="#722F37" font-weight="700">: </tspan>
         <tspan fill="#241117" font-weight="700">"Building things I can't stop thinking about."</tspan>
         <tspan fill="#722F37" font-weight="700">,</tspan>
       </text>
 
-      <!-- Line 7: learning -->
-      <text x="0" y="162">
+      <!-- Line 6: learning -->
+      <text x="0" y="150">
         <tspan fill="#8C3B45" font-weight="700">  learning  </tspan>
         <tspan fill="#722F37" font-weight="700">: </tspan>
         <tspan fill="#722F37" font-weight="700">[</tspan>
@@ -224,16 +216,16 @@
         <tspan fill="#722F37" font-weight="700">],</tspan>
       </text>
 
-      <!-- Line 8: funFact -->
-      <text x="0" y="189">
+      <!-- Line 7: funFact -->
+      <text x="0" y="180">
         <tspan fill="#8C3B45" font-weight="700">  funFact   </tspan>
         <tspan fill="#722F37" font-weight="700">: </tspan>
         <tspan fill="#241117" font-weight="700">"I debug at midnight and ship before sunrise."</tspan>
         <tspan fill="#722F37" font-weight="700">,</tspan>
       </text>
 
-      <!-- Line 9: }; -->
-      <text x="0" y="216">
+      <!-- Line 8: }; -->
+      <text x="0" y="210">
         <tspan fill="#241117" font-weight="700">};</tspan>
       </text>
     </g>
