@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="auto">
+  <defs>
+    <!-- Background Card Gradient: Espresso Velvet -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#24131B" />
+      <stop offset="100%" stop-color="#180C12" />
+    </linearGradient>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap');
+
+      .mono { font-family: 'Space Mono', monospace; }
+      .grotesk { font-family: 'Space Grotesk', -apple-system, sans-serif; }
+
+      /* ==================== ANIMATIONS FOR ALL SHAPES ==================== */
+
+      /* SHAPE 001: Concentric Rings & Radar */
+      .ring-cw {
+        animation: spinCW 14s linear infinite;
+        transform-origin: 142px 110px;
+      }
+      .ring-ccw {
+        animation: spinCCW 9s linear infinite;
+        transform-origin: 142px 110px;
+      }
+      .ring-pulse {
+        animation: pulseScale 3.2s ease-in-out infinite alternate;
+        transform-origin: 142px 110px;
+      }
+      .radar-sweep {
+        animation: radarSweep 4s linear infinite;
+        transform-origin: 142px 110px;
+      }
+      @keyframes spinCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes spinCCW {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      @keyframes pulseScale {
+        0% { transform: scale(0.92); opacity: 0.6; }
+        100% { transform: scale(1.08); opacity: 1; }
+      }
+      @keyframes radarSweep {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      /* SHAPE 002: Floating Isometric Cube & Spinning Inner Core */
+      .cube-levitate {
+        animation: cubeLevitate 4s ease-in-out infinite alternate;
+      }
+      .inner-cube-spin {
+        animation: innerSpin 8s ease-in-out infinite alternate;
+        transform-origin: 142px 110px;
+      }
+      @keyframes cubeLevitate {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
+      }
+      @keyframes innerSpin {
+        0% { transform: rotate(0deg) scale(0.95); }
+        50% { transform: rotate(180deg) scale(1.05); }
+        100% { transform: rotate(360deg) scale(0.95); }
+      }
+
+      /* SHAPE 003: Bento Wireframe Scan & Flowing Circuit */
+      .bento-scan-box {
+        animation: scanGlow 3s ease-in-out infinite alternate;
+      }
+      .circuit-flow {
+        animation: flowDash 2s linear infinite;
+        stroke-dasharray: 4 4;
+      }
+      @keyframes scanGlow {
+        0% { stroke: #B7A89A; stroke-width: 1.2; fill: transparent; }
+        50% { stroke: #722F37; stroke-width: 2; fill: rgba(114, 47, 55, 0.18); }
+        100% { stroke: #B7A89A; stroke-width: 1.2; fill: transparent; }
+      }
+      @keyframes flowDash {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: -16; }
+      }
+
+      /* SHAPE 004: Extruded Prism 3D Tilt & Facet Shimmer */
+      .prism-tilt {
+        animation: prismTiltAnim 5s ease-in-out infinite alternate;
+        transform-origin: 142px 110px;
+      }
+      .facet-shimmer {
+        animation: facetGlow 3s ease-in-out infinite alternate;
+      }
+      @keyframes prismTiltAnim {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-6px) rotate(3deg); }
+        100% { transform: translateY(0px) rotate(-3deg); }
+      }
+      @keyframes facetGlow {
+        0% { opacity: 0.3; }
+        100% { opacity: 0.95; }
+      }
+    </style>
+  </defs>
+
+  <!-- ==================== CARD 001 ==================== -->
+  <g transform="translate(0, 0)">
+    <rect width="285" height="480" rx="12" fill="url(#card-grad)" stroke="#3D242E" stroke-width="1.2" />
+    <!-- Index -->
+    <text x="24" y="38" fill="#B7A89A" class="mono" font-size="12" font-weight="700">001</text>
+    
+    <!-- Wireframe Art 001: Animated Concentric Rings & Radar -->
+    <g transform="translate(0, 10)">
+      <!-- Outer Dashed Ring (Clockwise) -->
+      <circle cx="142" cy="110" r="50" fill="none" stroke="#5A3340" stroke-width="1.2" stroke-dasharray="6 4" class="ring-cw" />
+      
+      <!-- Middle Solid Ring (Pulsing) -->
+      <circle cx="142" cy="110" r="36" fill="none" stroke="#B7A89A" stroke-width="1.5" class="ring-pulse" />
+      
+      <!-- Inner Ring (Counter-Clockwise) -->
+      <circle cx="142" cy="110" r="22" fill="none" stroke="#722F37" stroke-width="2" stroke-dasharray="10 4" class="ring-ccw" />
+      
+      <!-- Center Deep Burgundy Core -->
+      <circle cx="142" cy="110" r="5" fill="#722F37" />
+      <circle cx="142" cy="110" r="2" fill="#E8DCC6" />
+
+      <!-- Sweeping Radar Scanner Line -->
+      <line x1="142" y1="110" x2="142" y2="60" stroke="#E8DCC6" stroke-width="1.2" opacity="0.8" class="radar-sweep" />
+      
+      <!-- Fixed crosshair ticks -->
+      <line x1="142" y1="52" x2="142" y2="58" stroke="#B7A89A" stroke-width="1.5" />
+      <line x1="142" y1="162" x2="142" y2="168" stroke="#B7A89A" stroke-width="1.5" />
+      <line x1="84" y1="110" x2="90" y2="110" stroke="#B7A89A" stroke-width="1.5" />
+      <line x1="194" y1="110" x2="200" y2="110" stroke="#B7A89A" stroke-width="1.5" />
+    </g>
+
+    <!-- Content -->
+    <g transform="translate(24, 250)">
+      <text x="0" y="0" fill="#FAF6EE" class="grotesk" font-size="22" font-weight="700">UX Architecture</text>
+      <text x="0" y="26" fill="#722F37" class="grotesk" font-size="13" font-weight="700">Understand before building.</text>
+      <text x="0" y="65" fill="#B7A89A" class="grotesk" font-size="13" line-height="1.5">
+        <tspan x="0" dy="0">I decompose user journeys</tspan>
+        <tspan x="0" dy="20">into coherent state flows,</tspan>
+        <tspan x="0" dy="20">eliminating guesswork and</tspan>
+        <tspan x="0" dy="20">unnecessary friction.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 002 ==================== -->
+  <g transform="translate(305, 0)">
+    <rect width="285" height="480" rx="12" fill="url(#card-grad)" stroke="#3D242E" stroke-width="1.2" />
+    <!-- Index -->
+    <text x="24" y="38" fill="#B7A89A" class="mono" font-size="12" font-weight="700">002</text>
+    
+    <!-- Wireframe Art 002: Animated Floating Nested Cube -->
+    <g transform="translate(0, 10)" class="cube-levitate">
+      <!-- Outer Cube Structure -->
+      <path d="M 142 62 L 186 86 L 186 136 L 142 160 L 98 136 L 98 86 Z" fill="none" stroke="#5A3340" stroke-width="1.3" />
+      <path d="M 142 62 L 142 112 L 186 136" fill="none" stroke="#3D242E" stroke-width="1.2" />
+      <path d="M 142 112 L 98 136" fill="none" stroke="#3D242E" stroke-width="1.2" />
+
+      <!-- Inner Rotating Deep Burgundy Cube -->
+      <g class="inner-cube-spin">
+        <path d="M 142 92 L 160 104 L 160 126 L 142 136 L 124 126 L 124 104 Z" fill="rgba(114, 47, 55, 0.2)" stroke="#722F37" stroke-width="1.6" />
+        <path d="M 142 92 L 142 114 L 160 126" fill="none" stroke="#E8DCC6" stroke-width="1" />
+        <path d="M 142 114 L 124 126" fill="none" stroke="#E8DCC6" stroke-width="1" />
+      </g>
+    </g>
+
+    <!-- Content -->
+    <g transform="translate(24, 250)">
+      <text x="0" y="0" fill="#FAF6EE" class="grotesk" font-size="22" font-weight="700">Design Systems</text>
+      <text x="0" y="26" fill="#722F37" class="grotesk" font-size="13" font-weight="700">Tokens, scales &amp; precision.</text>
+      <text x="0" y="65" fill="#B7A89A" class="grotesk" font-size="13" line-height="1.5">
+        <tspan x="0" dy="0">Modular component libraries</tspan>
+        <tspan x="0" dy="20">and atomic token pipelines</tspan>
+        <tspan x="0" dy="20">that bridge Figma directly</tspan>
+        <tspan x="0" dy="20">into production code.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 003 ==================== -->
+  <g transform="translate(610, 0)">
+    <rect width="285" height="480" rx="12" fill="url(#card-grad)" stroke="#3D242E" stroke-width="1.2" />
+    <!-- Index -->
+    <text x="24" y="38" fill="#B7A89A" class="mono" font-size="12" font-weight="700">003</text>
+    
+    <!-- Wireframe Art 003: Animated Bento Grid & Flowing Pulse -->
+    <g transform="translate(0, 10)">
+      <!-- Bento wireframe planes with dynamic scan -->
+      <rect x="100" y="65" width="38" height="26" rx="3" fill="none" stroke="#5A3340" stroke-width="1.2" />
+      <rect x="144" y="65" width="44" height="26" rx="3" fill="none" stroke="#5A3340" stroke-width="1.2" />
+      
+      <!-- Active Scanning Bento Box -->
+      <rect x="100" y="97" width="44" height="48" rx="3" class="bento-scan-box" />
+      
+      <rect x="150" y="97" width="38" height="22" rx="3" fill="none" stroke="#5A3340" stroke-width="1.2" />
+      <rect x="150" y="125" width="38" height="20" rx="3" fill="none" stroke="#5A3340" stroke-width="1.2" />
+      
+      <!-- Flowing Animated Connection Circuit -->
+      <path d="M 85 120 L 100 120" stroke="#722F37" stroke-width="1.5" class="circuit-flow" />
+      <circle cx="85" cy="120" r="3" fill="#722F37" />
+      <circle cx="85" cy="120" r="1.5" fill="#E8DCC6" />
+    </g>
+
+    <!-- Content -->
+    <g transform="translate(24, 250)">
+      <text x="0" y="0" fill="#FAF6EE" class="grotesk" font-size="22" font-weight="700">Creative Frontend</text>
+      <text x="0" y="26" fill="#722F37" class="grotesk" font-size="13" font-weight="700">Motion, Three.js &amp; Next.js.</text>
+      <text x="0" y="65" fill="#B7A89A" class="grotesk" font-size="13" line-height="1.5">
+        <tspan x="0" dy="0">Writing clean TypeScript</tspan>
+        <tspan x="0" dy="20">and Framer Motion physics</tspan>
+        <tspan x="0" dy="20">where every transition</tspan>
+        <tspan x="0" dy="20">feels natural and crisp.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 004 ==================== -->
+  <g transform="translate(915, 0)">
+    <rect width="285" height="480" rx="12" fill="url(#card-grad)" stroke="#3D242E" stroke-width="1.2" />
+    <!-- Index -->
+    <text x="24" y="38" fill="#B7A89A" class="mono" font-size="12" font-weight="700">004</text>
+    
+    <!-- Wireframe Art 004: Animated 3D Extruded Prism -->
+    <g transform="translate(0, 10)" class="prism-tilt">
+      <!-- Prism Wireframe -->
+      <path d="M 110 80 L 135 65 L 175 90 L 175 140 L 150 155 L 110 130 Z" fill="none" stroke="#5A3340" stroke-width="1.3" />
+      
+      <!-- Glowing Active Facet -->
+      <path d="M 135 65 L 135 115 L 175 140" stroke="#722F37" stroke-width="2" fill="rgba(114, 47, 55, 0.2)" class="facet-shimmer" />
+      <path d="M 135 115 L 110 130" stroke="#E8DCC6" stroke-width="1.5" />
+      
+      <!-- Subtle internal fold -->
+      <path d="M 148 74 L 148 124 L 164 133" stroke="#3D242E" stroke-width="1" />
+      
+      <!-- Apex Point Dot -->
+      <circle cx="135" cy="65" r="3" fill="#722F37" />
+    </g>
+
+    <!-- Content -->
+    <g transform="translate(24, 250)">
+      <text x="0" y="0" fill="#FAF6EE" class="grotesk" font-size="22" font-weight="700">Accessibility &amp; A11y</text>
+      <text x="0" y="26" fill="#722F37" class="grotesk" font-size="13" font-weight="700">Built for every user.</text>
+      <text x="0" y="65" fill="#B7A89A" class="grotesk" font-size="13" line-height="1.5">
+        <tspan x="0" dy="0">Fully WCAG-compliant,</tspan>
+        <tspan x="0" dy="20">keyboard navigable, and</tspan>
+        <tspan x="0" dy="20">screen-reader optimized</tspan>
+        <tspan x="0" dy="20">without visual compromise.</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
