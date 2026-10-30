@@ -69,19 +69,3 @@ $ curl -s https://api.github.com/users/pranov888/contact
 <sub>Crafted with custom SVG architecture · Inspired by Cosmic Latte, Mocha Cream &amp; Deep Burgundy</sub>
 
 </div>
-
----
-
-### `04 // CHANGELOG & UPDATE LOG`
-
-- **2026-10-30 (`cosmic-burgundy-palette-2026-10-30`)**:
-  - Replaced high-voltage green with the bespoke **Cosmic Latte (`#B7A89A`)**, **Mocha Cream (`#E8DCC6`)**, and **Deep Burgundy (`#722F37`)** luxury palette from Image 2.
-  - Fully animated all shapes across all SVGs:
-    - *Hero*: rotating turntables, live equalizer bars, and twinkling celestial stars (`✦`).
-    - *Metrics*: animated pulse rings, floating star, and glowing Deep Burgundy card.
-    - *Bento 001*: rotating concentric dashed rings, pulsing core, and sweeping radar scanner line.
-    - *Bento 002*: levitating outer 3D isometric cube and rotating inner Deep Burgundy cube.
-    - *Bento 003*: dynamic scanning bento box and flowing circuit dashed lines.
-    - *Bento 004*: 3D oscillating prism with shimmer facet reflections.
-    - *Charter*: signal pulse flow traveling across the bezier curve and double beacon rings.
-    - *Matrix*: rotating plus anchor, pulsing star, and glowing pill border.
