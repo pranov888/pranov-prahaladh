@@ -13,7 +13,7 @@
       <stop offset="100%" stop-color="#F3E9DA" />
     </linearGradient>
 
-    <style>
+    <style><![CDATA[
       @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap');
 
       .mono { font-family: 'Space Mono', monospace; }
@@ -38,7 +38,7 @@
         0% { opacity: 0.6; }
         100% { opacity: 1; }
       }
-    </style>
+    ]]></style>
   </defs>
 
   <!-- Container Base -->
