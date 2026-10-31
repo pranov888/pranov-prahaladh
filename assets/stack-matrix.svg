@@ -21,8 +21,9 @@
       .grotesk { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; }
       .cat-title { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; font-weight: 800; fill: #722F37; letter-spacing: 0.5px; }
       .cat-sub { font-family: 'Space Mono', monospace; font-size: 11px; font-weight: 700; fill: #886D5B; letter-spacing: 1.2px; }
-      .tag-text { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13.5px; font-weight: 700; fill: #1C0F14; }
-      .tag-text-sm { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12.5px; font-weight: 700; fill: #1C0F14; }
+      .tag-text { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 700; fill: #1C0F14; }
+      .tag-text-sm { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; font-weight: 700; fill: #1C0F14; letter-spacing: -0.1px; }
+      .tag-text-xs { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 700; fill: #1C0F14; letter-spacing: -0.2px; }
 
             /* Dynamic Live Telemetry Equalizer (replaces revolving X) */
       .pulse-live {
@@ -313,7 +314,7 @@
         <g transform="translate(7, 7)">
           <path d="M 3 11 C 4.5 7 7.5 7 9 10 C 10.5 13 13 13.5 15.5 11.5 C 14 14.5 11 15 9.5 12 C 8 9 5.5 9 3 11 Z" fill="#06B6D4" />
         </g>
-        <text x="34" y="22" class="tag-text-sm">Tailwind CSS</text>
+        <text x="31" y="22" class="tag-text-xs">Tailwind CSS</text>
       </g>
 
       <!-- GSAP -->
@@ -678,7 +679,7 @@
           <circle cx="10" cy="10" r="9.5" fill="#25D366" />
           <path d="M 6 14 L 7 11 C 6 9 7 7 10 7 C 13 7 14 9 14 11 C 14 13 12 14 10 14 L 6 14 Z" fill="#FFFFFF" />
         </g>
-        <text x="34" y="22" class="tag-text-sm">WhatsApp API</text>
+        <text x="31" y="22" class="tag-text-xs">WhatsApp API</text>
       </g>
       <!-- Razorpay -->
       <g transform="translate(134, 0)">
@@ -706,7 +707,7 @@
           <circle cx="10" cy="10" r="9.5" fill="#4285F4" />
           <text x="10" y="14.5" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="9" text-anchor="middle">G</text>
         </g>
-        <text x="34" y="22" class="tag-text-sm">G-Workspace</text>
+        <text x="31" y="22" class="tag-text-xs">G-Workspace</text>
       </g>
 
       <!-- Slack -->
@@ -825,7 +826,7 @@
           <rect width="20" height="20" rx="3.5" fill="#00005B" />
           <text x="10" y="14" fill="#EA77FF" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="8.5" text-anchor="middle">Pr</text>
         </g>
-        <text x="34" y="22" class="tag-text-sm">Premiere / InD</text>
+        <text x="31" y="22" class="tag-text-xs">Premiere / InD</text>
       </g>
     </g>
   </g>
